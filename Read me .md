@@ -119,7 +119,7 @@ Overall, the **fedml/** directory provides a comprehensive environment for devel
 
 # Hardware Devices 
 
-![image.png](attachment:image.png)
+![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/f94e32ec-8087-4476-a00b-b09dca973ebd)
 
 # SETTING UP HARDWARE DEVICES 
 
@@ -207,7 +207,7 @@ Extracts the downloaded tar files.
 
 Builds and installs batman-adv, batctl, and alfred.
 
-http://localhost:8888/notebooks/Untitled2.ipynb?kernel_name=python3
+https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/blob/main/BATMAN.md
 
 ## Running the Main Application
 
