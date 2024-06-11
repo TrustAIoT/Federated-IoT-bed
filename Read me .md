@@ -21,7 +21,7 @@ rather wireless communication that is susceptible to dropping out due to element
 interference or even weather. Therefore, we have decided to use a mesh network to add both
 extra redundancy and reliability to our connected devices as shown below in figure 1.
 
-![image.png](attachment:image.png)
+![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/c126bc5d-abc5-47ef-8fdc-a2ba8ec21c6f)
 
 # Project Structure 
 
