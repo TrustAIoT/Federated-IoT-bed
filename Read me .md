@@ -35,6 +35,7 @@ project-root/
   ├── Views/
   ├── App.py
   ├── Untitled.ipynb
+  
 ├── fedml/
 │   ├── applications/
 │   ├── benchmark/
@@ -50,6 +51,7 @@ project-root/
 │   ├── scripts/
 │   ├── __init__.py
 │   ├── async_fedml_source_code.sh
+
 ├── batmanInstall.sh
 ├── nanoInstall.sh
 ├── piInstall.sh
