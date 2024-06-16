@@ -25,38 +25,34 @@ extra redundancy and reliability to our connected devices as shown below in figu
 
 ## Project Directory Structure 
 project-root/
-├── application/
-  ├── Communication/
-  ├── Controllers/
-  ├── Examples/
-  ├── Models/
-  ├── Processes/
-  ├── Utility/
-  ├── Views/
-  ├── App.py
-  ├── Untitled.ipynb
-  
-├── fedml/
-│   ├── applications/
-│   ├── benchmark/
-│   ├── build-mlops-package/
-│   ├── data/
-│   ├── docs/
-│   ├── fedml_api/
-│   ├── fedml_core/
-│   ├── fedml_experiments/
-│   ├── fedml_iot/
-│   ├── fedml_mobile/
-│   ├── fedml_server/
-│   ├── scripts/
+├── docs/
+│   ├── architecture.md
+│   ├── installation.md
+│   └── usage.md
+├── src/
 │   ├── __init__.py
-│   ├── async_fedml_source_code.sh
+│   ├── main.py
+│   ├── config/
+│   │   ├── __init__.py
+│   │   └── config.yaml
+│   ├── data/
+│   │   ├── __init__.py
+│   │   └── load_data.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── model.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── helper_functions.py
+│   └── tests/
+│       ├── __init__.py
+│       └── test_main.py
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── setup.py
+└── LICENSE
 
-├── batmanInstall.sh
-├── nanoInstall.sh
-├── piInstall.sh
-├── pirequirements.txt
-└── untitled.txt
 ## Hardware Devices 
 
 ![Jetson%20Nano.jpg](https://private-user-images.githubusercontent.com/81721268/340063850-e1608d7b-af39-4e76-b229-ed209f77a235.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg1MTEwNjgsIm5iZiI6MTcxODUxMDc2OCwicGF0aCI6Ii84MTcyMTI2OC8zNDAwNjM4NTAtZTE2MDhkN2ItYWYzOS00ZTc2LWIyMjktZWQyMDlmNzdhMjM1LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjE2VDA0MDYwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNmNjIzYTA5YmFlZWYxNDdlZGM5NDZlYTE4YTI1NTMyMmUxYWYzMTgzM2NlNTNiM2NlZTU2ZTA1YjRmNzE1ZGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.S3VjyckXDUb_GyaJv45O5NxaIvMxao1pghsHfrcvRRA)
