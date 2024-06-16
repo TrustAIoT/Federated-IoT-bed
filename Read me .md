@@ -35,19 +35,6 @@ project-root/
   ├── Views/
   ├── App.py
   ├── Untitled.ipynb
-├── benchmark/
-│   ├── config/
-│   ├── data/
-│   ├── trainer/
-│   ├── wandb/
-│   ├── __init__.py
-│   ├── build_mlops_pkg.sh
-│   ├── run_client.sh
-│   ├── run_server.sh
-│   ├── testing.py
-│   ├── torch_client.py
-│   ├── torch_server.py
-│   └── ...
 ├── fedml/
 │   ├── applications/
 │   ├── benchmark/
@@ -67,8 +54,6 @@ project-root/
 ├── nanoInstall.sh
 ├── piInstall.sh
 ├── pirequirements.txt
-├── readme.md
-├── test.gv
 └── untitled.txt
 ## Hardware Devices 
 
