@@ -64,28 +64,6 @@ project-root/
 │   ├── scripts/
 │   ├── __init__.py
 │   ├── async_fedml_source_code.sh
-│   ├── CI-install.sh
-│   ├── CI-script-fedavg-robust.sh
-│   ├── CI-script-fedavg.sh
-│   ├── CI-script-fednas.sh
-│   ├── CI-script-framework.sh
-│   ├── contributor.md
-│   ├── INSTALL.md
-│   ├── LICENSE
-│   ├── publications.md
-│   ├── README.md
-│   └── ...
-├── system_based_client_selection/
-│   ├── config/
-│   ├── data/
-│   ├── model/
-│   ├── trainer/
-│   ├── wandb/
-│   ├── main_fedml_system_selection.py
-│   ├── run_client.sh
-│   ├── run_server.sh
-│   ├── run_simulation.sh
-│   └── ...
 ├── batmanInstall.sh
 ├── nanoInstall.sh
 ├── piInstall.sh
