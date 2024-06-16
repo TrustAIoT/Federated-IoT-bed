@@ -21,7 +21,7 @@ rather wireless communication that is susceptible to dropping out due to element
 interference or even weather. Therefore, we have decided to use a mesh network to add both
 extra redundancy and reliability to our connected devices as shown below in figure 1.
 
-![image.png](attachment:image.png)
+![image.png](https://private-user-images.githubusercontent.com/81721268/340063582-7683d920-fa38-4aed-8787-7d9a35087029.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg1MTA0NjQsIm5iZiI6MTcxODUxMDE2NCwicGF0aCI6Ii84MTcyMTI2OC8zNDAwNjM1ODItNzY4M2Q5MjAtZmEzOC00YWVkLTg3ODctN2Q5YTM1MDg3MDI5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjE2VDAzNTYwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFlNzZkNWZlMWNhNDMwYmE2OGNlNGE3Y2EzNDE0OWY0MDExN2Q2OGU1N2FiYTZkODBlNGY3YjFiN2I3MDNmNjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.O5jlUyHAFW-_CdtQX_3GfHn6BzN9p0SgJsvGhxEeDnA)
 
 ## Project Directory Structure 
 project-root/
@@ -95,7 +95,7 @@ project-root/
 └── untitled.txt
 ## Hardware Devices 
 
-![Jetson%20Nano.jpg](attachment:Jetson%20Nano.jpg)
+![Jetson%20Nano.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/issues/3#issuecomment-2171035292)
 
 ## Setting up the FEDML 
 
