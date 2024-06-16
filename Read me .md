@@ -26,16 +26,15 @@ extra redundancy and reliability to our connected devices as shown below in figu
 ## Project Directory Structure 
 project-root/
 ├── application/
-│   ├── Communication/
-│   ├── Controllers/
-│   ├── Examples/
-│   ├── Models/
-│   ├── Processes/
-│   ├── Utility/
-│   ├── Views/
-│   ├── App.py
-│   ├── Untitled.ipynb
-│   └── ...
+  ├── Communication/
+  ├── Controllers/
+  ├── Examples/
+  ├── Models/
+  ├── Processes/
+  ├── Utility/
+  ├── Views/
+  ├── App.py
+  ├── Untitled.ipynb
 ├── benchmark/
 │   ├── config/
 │   ├── data/
