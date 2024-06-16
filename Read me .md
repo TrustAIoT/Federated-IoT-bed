@@ -95,7 +95,7 @@ project-root/
 └── untitled.txt
 ## Hardware Devices 
 
-![Jetson%20Nano.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/issues/3#issuecomment-2171035292)
+![Jetson%20Nano.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/issues/4#issue-2355408339)
 
 ## Setting up the FEDML 
 
