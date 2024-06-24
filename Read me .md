@@ -28,7 +28,7 @@ extra redundancy and reliability to our connected devices as shown below in figu
 
 ## Hardware Devices 
 
-![Jetson%20Nano.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/edit/main/table.md)
+![Jetson%20Nano.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/705a62ef-3f68-4683-a01e-3dcf4568399c)
 
 ## Setting up the FEDML 
 
