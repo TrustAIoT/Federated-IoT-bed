@@ -24,7 +24,50 @@ extra redundancy and reliability to our connected devices as shown below in figu
 ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/2c517eea-754e-4754-a9b4-b48b69558782)
 
 ## Project Directory Structure 
-![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/2a482fd3-c613-4303-82c4-677d8a3da0ad)
+project-directory/
+.
+├── BATMAN.ipynb
+├── batmanInstall.sh
+├── directory_tree.txt
+├── nanoInstall.sh
+├── piInstall.sh
+├── pirequirements.txt
+├── Read me.ipynb
+├── readme.md
+├── test.gv
+├── Application
+│   ├── App.py
+│   ├── Untitled.ipynb
+├── Benchmarking
+│   ├── build_mlops_pkg.sh
+│   ├── run_client.sh
+│   ├── run_server.sh
+│   ├── testing.py
+│   ├── torch_client.py
+│   ├── torch_server.py
+├── data
+│   ├── custom_data_loader.py
+│   ├── efficient_loader.py
+│   ├── without_reload.py
+├── trainer
+│   ├── classification_aggregator.py
+│   ├── classification_trainer.py
+├── wandb
+├── FedML-fedml_v0.6_before_fundraising
+│   ├── async_fedml_source_code.sh
+│   ├── CI-install.sh
+├── Jetson-Nano-Projects
+│   ├── requirements.txt
+│   ├── Projects
+│       ├── start-batman-adv-client.sh
+│       ├── start-batman-adv.sh
+├── Raspberry-Pi-Projects
+│   ├── requirements.txt
+│   ├── Projects
+│       ├── start-batman-adv.sh
+│       ├── bt-pan
+│       ├── FedML
+
 
 ## Hardware Devices 
 | Item | Description | Image |
