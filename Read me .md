@@ -25,6 +25,8 @@ extra redundancy and reliability to our connected devices as shown below in figu
 
 ## Project Directory Structure 
 project-directory/
+```plaintext
+project-directory/
 .
 ├── BATMAN.ipynb
 ├── batmanInstall.sh
@@ -64,9 +66,7 @@ project-directory/
 ├── Raspberry-Pi-Projects
 │   ├── requirements.txt
 │   ├── Projects
-│       ├── start-batman-adv.sh
-│       ├── bt-pan
-│       ├── FedML
+
 
 
 ## Hardware Devices 
