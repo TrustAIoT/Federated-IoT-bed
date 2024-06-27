@@ -66,9 +66,7 @@ project-directory/
 ├── Raspberry-Pi-Projects
 │   ├── requirements.txt
 │   ├── Projects
-
-
-
+```
 ## Hardware Devices 
 | Item | Description | Image |
 |------|-------------|-------|
