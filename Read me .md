@@ -126,10 +126,11 @@ https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/blob/main/BATM
 ## Running the Main Application
 
 ### 1 Run the Application Script
-\```
+```
 cd project-root/application/
 python App.py
-\```
+```
+
 
 ### 2 Monitoring and Logging
 
