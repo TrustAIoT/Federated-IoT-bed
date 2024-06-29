@@ -23,6 +23,17 @@ extra redundancy and reliability to our connected devices as shown below in figu
 
 ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/2c517eea-754e-4754-a9b4-b48b69558782)
 
+
+## Hardware Devices 
+| Item | Description | Image |
+|------|-------------|-------|
+| Waveshare Jetson Nano Development/Expansion Kit BO1 (3x) | The Jetson Nano developer boards utilize NVIDIA’s JetPack SDK to provide a full development environment for hardware-accelerated AI edge development. We utilize the Jetson Nanos as clients for gpu-accelerated distributed machine learning. [Link](https://www.amazon.com/dp/B09R4MH39B) | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/6ea33e27-aa26-4e1e-a36c-e359b6941534) |
+| NVIDIA Jetson Orin Nano Developer Kit (1x) | The Jetson Orin developer board is a more powerful updated Jetson Nano module with up to 80x the performance of NVIDIA Jetson Nano. With the increased performance and 8 GB of RAM, the Jetson Orin Nano Developer Kit helps give our testbed extreme heterogeneity across our training devices. This heterogeneity allows our testbed to better research and evaluate distributed learning issues and research topics such as asynchronous federated learning. For our testbed, we utilize the Jetson Orin to work as gateway devices for our mesh network and similar to Jetson Nano as clients for gpu-accelerated distributed machine learning. [Link](https://www.amazon.com/dp/B09R4MH39B) | ![image.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/75047b39-7fba-4efc-a49d-b9653e437eb0) |
+| Raspberry Pi 4 Model B 2019 Quad Core 64 Bit Wifi Bluetooth (4GB) (3x) | The Raspberry Pi 4 Model B is a tiny desktop computer with performance comparable to entry-level x86 PC systems. The Raspberry Pi 4 Model B both increases the heterogeneity of our testbed’s architecture with its lack of GPUs and serves to easily collect sensor data through its well-documented 40-pin GPIO header. For our testbed, we utilize the Raspberry Pi 4 Model Bs to both collect sensor data and run our distributed learning server through FedML integration. [Link](https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X) | ![image.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/9deace18-9b6f-421d-b61b-620eb0ca0574) |
+| Raspberry Pi Pico W with Pre-Soldered Header (3x) | The Raspberry Pi Pico W is a small low-cost high-performance microcontroller board featuring Infineon’s CYW43439 wireless chip for Wi-Fi 4 wireless network control and communication and 26 GPIO pins. For our testbed, we will utilize the Pico W’s GPIO pins for collecting sensor data to train our lab’s models in the future. [Link](https://www.amazon.com/Pico-Raspberry-Pre-Soldered-Dual-core-Processor/dp/B0BK9W4H2Q) | ![image.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/6a87a545-8ae2-4fcd-9f1c-f93b848cecc9) |
+| Panda Wireless PAU0B AC600 Dual Band Wireless USB Adapter (1x) | The Panda Wireless USB adapter allowed us to configure our Jetson Nano module to act as a gateway connecting our testbed’s mesh network to our lab’s router’s internet connection. Any network interface could work for this purpose but we found the Panda Wireless adapter to be extremely easy to set up for our Linux environment compared to other adapters. [Link](https://www.amazon.com/dp/B08NPX2X4Z?tag=bravesoftwa04-20&linkCode=osi&th=1&psc=1&language=en_US) | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/af1d75d5-630d-40e9-b443-8efd0da69f66) |
+| Sensor Kit | In order to create our own custom datasets for training our lab’s models we have purchased a sensor kit to allow our testbed to collect sensor data. The sensor kit features various sensor collection devices such as: - Temperature sensors - Microphone sound sensors - Vibration switch - Infrared sensor - Obstacle avoidance sensor - Infrared tracking sensor | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/5e1726e1-e5d4-43eb-97e0-8d3a6c50dc60) |
+
 ## Project Directory Structure 
 project-directory/
 ```plaintext
@@ -67,34 +78,6 @@ project-directory/
 │   ├── requirements.txt
 │   ├── Projects
 ```
-## Hardware Devices 
-| Item | Description | Image |
-|------|-------------|-------|
-| Waveshare Jetson Nano Development/Expansion Kit BO1 (3x) | The Jetson Nano developer boards utilize NVIDIA’s JetPack SDK to provide a full development environment for hardware-accelerated AI edge development. We utilize the Jetson Nanos as clients for gpu-accelerated distributed machine learning. [Link](https://www.amazon.com/dp/B09R4MH39B) | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/6ea33e27-aa26-4e1e-a36c-e359b6941534) |
-| NVIDIA Jetson Orin Nano Developer Kit (1x) | The Jetson Orin developer board is a more powerful updated Jetson Nano module with up to 80x the performance of NVIDIA Jetson Nano. With the increased performance and 8 GB of RAM, the Jetson Orin Nano Developer Kit helps give our testbed extreme heterogeneity across our training devices. This heterogeneity allows our testbed to better research and evaluate distributed learning issues and research topics such as asynchronous federated learning. For our testbed, we utilize the Jetson Orin to work as gateway devices for our mesh network and similar to Jetson Nano as clients for gpu-accelerated distributed machine learning. [Link](https://www.amazon.com/dp/B09R4MH39B) | ![image.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/75047b39-7fba-4efc-a49d-b9653e437eb0) |
-| Raspberry Pi 4 Model B 2019 Quad Core 64 Bit Wifi Bluetooth (4GB) (3x) | The Raspberry Pi 4 Model B is a tiny desktop computer with performance comparable to entry-level x86 PC systems. The Raspberry Pi 4 Model B both increases the heterogeneity of our testbed’s architecture with its lack of GPUs and serves to easily collect sensor data through its well-documented 40-pin GPIO header. For our testbed, we utilize the Raspberry Pi 4 Model Bs to both collect sensor data and run our distributed learning server through FedML integration. [Link](https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X) | ![image.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/9deace18-9b6f-421d-b61b-620eb0ca0574) |
-| Raspberry Pi Pico W with Pre-Soldered Header (3x) | The Raspberry Pi Pico W is a small low-cost high-performance microcontroller board featuring Infineon’s CYW43439 wireless chip for Wi-Fi 4 wireless network control and communication and 26 GPIO pins. For our testbed, we will utilize the Pico W’s GPIO pins for collecting sensor data to train our lab’s models in the future. [Link](https://www.amazon.com/Pico-Raspberry-Pre-Soldered-Dual-core-Processor/dp/B0BK9W4H2Q) | ![image.jpg](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/6a87a545-8ae2-4fcd-9f1c-f93b848cecc9) |
-| Panda Wireless PAU0B AC600 Dual Band Wireless USB Adapter (1x) | The Panda Wireless USB adapter allowed us to configure our Jetson Nano module to act as a gateway connecting our testbed’s mesh network to our lab’s router’s internet connection. Any network interface could work for this purpose but we found the Panda Wireless adapter to be extremely easy to set up for our Linux environment compared to other adapters. [Link](https://www.amazon.com/dp/B08NPX2X4Z?tag=bravesoftwa04-20&linkCode=osi&th=1&psc=1&language=en_US) | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/af1d75d5-630d-40e9-b443-8efd0da69f66) |
-| Sensor Kit | In order to create our own custom datasets for training our lab’s models we have purchased a sensor kit to allow our testbed to collect sensor data. The sensor kit features various sensor collection devices such as: - Temperature sensors - Microphone sound sensors - Vibration switch - Infrared sensor - Obstacle avoidance sensor - Infrared tracking sensor | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/5e1726e1-e5d4-43eb-97e0-8d3a6c50dc60) |
-## Setting up the FEDML 
-
-FedML plays a crucial role in our project by providing a structured and efficient framework for implementing federated learning across distributed edge devices, such as the Jetson Nano Development/Expansion Kits. The use of FedML brings several key advantages and functionalities that are essential for the success of our distributed machine learning project. In summary, FedML is integral to our project as it provides the necessary tools and infrastructure to implement federated learning across distributed edge devices. Its capabilities in data privacy, scalability, cost efficiency, real-time processing, and flexibility make it an indispensable component for achieving our project goals effectively and efficiently. By leveraging FedML, we can harness the power of edge computing with the Jetson Nano kits to build a robust and scalable distributed machine learning system.
-
-### 1 Clone the FedML Repository:
-git clone https://github.com/FedML-AI/FedML.git
-cd FedML
-
-### 2 Install Dependencies:
-pip install -r requirements.txt
-
-### 3 Build MLOps Package
-cd benchmark
-sh build_mlops_pkg.sh
-
-## An Overview of setting up FEDML and review architecture
-
-https://doc.fedml.ai/federate/getting_started
-
 ## B.A.T.M.A.N. Advanced (batman-adv) Setup Guide
 
 ### 1 Overview of B.A.T.M.A.N Advanced 
@@ -122,6 +105,25 @@ Extracts the downloaded tar files.
 Builds and installs batman-adv, batctl, and alfred.
 
 https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/blob/main/BATMAN%20.md
+## Setting up the FEDML 
+
+FedML plays a crucial role in our project by providing a structured and efficient framework for implementing federated learning across distributed edge devices, such as the Jetson Nano Development/Expansion Kits. The use of FedML brings several key advantages and functionalities that are essential for the success of our distributed machine learning project. In summary, FedML is integral to our project as it provides the necessary tools and infrastructure to implement federated learning across distributed edge devices. Its capabilities in data privacy, scalability, cost efficiency, real-time processing, and flexibility make it an indispensable component for achieving our project goals effectively and efficiently. By leveraging FedML, we can harness the power of edge computing with the Jetson Nano kits to build a robust and scalable distributed machine learning system.
+
+### 1 Clone the FedML Repository:
+git clone https://github.com/FedML-AI/FedML.git
+cd FedML
+
+### 2 Install Dependencies:
+pip install -r requirements.txt
+
+### 3 Build MLOps Package
+cd benchmark
+sh build_mlops_pkg.sh
+
+## An Overview of setting up FEDML and review architecture
+
+https://doc.fedml.ai/federate/getting_started
+
 
 ## Running the Main Application
 
