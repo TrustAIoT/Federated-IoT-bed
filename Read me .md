@@ -140,15 +140,4 @@ rack Metrics Using Weights and Biases
 Ensure you have set up Weights and Biases (Wandb) for logging.
 Logs and metrics will be stored in the project-root/benchmark/wandb/ directory.
 
-### 3 Trubleshooting 
 
-Ensure all devices are properly connected and can communicate with each other.
-
-Check the logs in the wandb directory for any errors or issues during execution.
-
-Refer to the documentation in fedml/README.md and other relevant README.md files for additional guidance and troubleshooting tips.
-
-
-```python
-
-```
