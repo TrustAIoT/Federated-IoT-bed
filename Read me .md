@@ -110,16 +110,20 @@ https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/blob/main/BATM
 FedML plays a crucial role in our project by providing a structured and efficient framework for implementing federated learning across distributed edge devices, such as the Jetson Nano Development/Expansion Kits. The use of FedML brings several key advantages and functionalities that are essential for the success of our distributed machine learning project. In summary, FedML is integral to our project as it provides the necessary tools and infrastructure to implement federated learning across distributed edge devices. Its capabilities in data privacy, scalability, cost efficiency, real-time processing, and flexibility make it an indispensable component for achieving our project goals effectively and efficiently. By leveraging FedML, we can harness the power of edge computing with the Jetson Nano kits to build a robust and scalable distributed machine learning system.
 
 ### 1 Clone the FedML Repository:
+```
 git clone https://github.com/FedML-AI/FedML.git
 cd FedML
-
+```
 ### 2 Install Dependencies:
+```
 pip install -r requirements.txt
+```
 
-### 3 Build MLOps Package
+### 3 Build MLOps Package:
+```
 cd benchmark
 sh build_mlops_pkg.sh
-
+```
 ## An Overview of setting up FEDML and review architecture
 
 https://doc.fedml.ai/federate/getting_started
