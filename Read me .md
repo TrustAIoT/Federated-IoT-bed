@@ -134,10 +134,5 @@ python App.py
 ```
 
 
-### 2 Monitoring and Logging
-
-rack Metrics Using Weights and Biases
-Ensure you have set up Weights and Biases (Wandb) for logging.
-Logs and metrics will be stored in the project-root/benchmark/wandb/ directory.
 
 
