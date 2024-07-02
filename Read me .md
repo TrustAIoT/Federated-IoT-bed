@@ -80,31 +80,40 @@ project-directory/
 ```
 ## B.A.T.M.A.N. Advanced (batman-adv) Setup Guide
 
-### 1 Overview of B.A.T.M.A.N Advanced 
+### 1 Overview of B.A.T.M.A.N Advanced:
 
 B.A.T.M.A.N. Advanced (batman-adv) is a routing protocol designed for multi-hop ad hoc networks. This guide will walk you through the installation of batman-adv along with its associated tools, batctl and alfred. We will also explain the directory structure and how to use these tools to set up and manage your mesh network. batman-adv operates at layer 2, allowing for seamless data transmission across multiple nodes in a mesh network. This setup will help you get batman-adv up and running on your devices, enabling efficient routing and data sharing across your network.
 
-### 2 Prerequisites
+### 2 Update and Upgrade Your System:
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+### 3 Install Required Packages:
+```
+sudo apt-get install build-essential git libnl-3-dev libnl-genl-3-dev
+```
+### 4 Clone the BATMAN-Adv Repository:
+Navigate to your network-auto-configuration-master/batman/ directory and clone the BATMAN-Adv repository.
+```
+cd network-auto-configuration-master/batman
+```
+### 5 Build and Install BATMAN-Adv:
+```
+cd batman-adv
+make
+sudo make install
 
-Ensure you have a Linux-based system.
+```
+### 6 Load the BATMAN-Adv Kernel Module:
+```
+sudo modprobe batman-adv
 
-Basic knowledge of terminal commands.
+```
+### 7 Configuring BATMAN-Adv:
 
-wget and pip3 installed on your system
 
-### 3 Installation Steps 
 
-The installation script performs the following tasks:
-
-Installs wget if not already present.
-
-Downloads the latest stable versions of batman-adv, batctl, and alfred.
-
-Extracts the downloaded tar files.
-
-Builds and installs batman-adv, batctl, and alfred.
-
-https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/blob/main/BATMAN%20.md
 ## Setting up the FEDML 
 
 FedML plays a crucial role in our project by providing a structured and efficient framework for implementing federated learning across distributed edge devices, such as the Jetson Nano Development/Expansion Kits. The use of FedML brings several key advantages and functionalities that are essential for the success of our distributed machine learning project. In summary, FedML is integral to our project as it provides the necessary tools and infrastructure to implement federated learning across distributed edge devices. Its capabilities in data privacy, scalability, cost efficiency, real-time processing, and flexibility make it an indispensable component for achieving our project goals effectively and efficiently. By leveraging FedML, we can harness the power of edge computing with the Jetson Nano kits to build a robust and scalable distributed machine learning system.
