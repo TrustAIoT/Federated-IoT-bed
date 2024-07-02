@@ -7,49 +7,54 @@ chmod +x install_batman_adv.sh
 ```
 ## Running and Testing the Setup
 
-### 1 Load the Kernel Module:
+### 1 Create BATMAN Interfaces:
+You need to create BATMAN virtual interfaces for your network devices. Replace eth0 with your actual network interface.
+```
+sudo batctl if add eth0
 
 ```
-sudo modprobe batman-adv
+
+### 2 Bring Up the BATMAN Interface:
+"Bring Up the BATMAN Interface" means to configure and activate the BATMAN (Better Approach To Mobile Ad-hoc Networking) interface on your system. This involves setting up the BATMAN-Adv (BATMAN Advanced) protocol, which operates on Layer 2 (data link layer) to create a mesh network.
+```
+sudo ifconfig bat0 up
+
 ```
 
-### 2 Add Network Interfaces to batman-adv:
+### 3 Assign an IP Address to the BATMAN Interface:
 ```
-sudo batctl if add <network-interface>
-
-sudo ip link set up dev bat0
+sudo ifconfig bat0 " IP adress "
 ```
 
-## Testing Conectivity 
+## Running The Project:
 
-## 1 Check the Status of Interfaces:
+### 1 Run the Installation Script:
+If you have a script (batmanInstall.sh) to install BATMAN-Adv, run it as follows:
 ```
-sudo batctl if
-```
+cd network-auto-configuration-master/batman
+./batmanInstall.sh
 
-### 2 Ping Between Nodes:
-
-Ensure batman-adv is running on all nodes in your network, then use ping to test connectivity.
 ```
-ping <other-node-ip>
-```
+### 2 Run the Configuration Script:
 
-## Monitoring and Managing the Network
-
-### 1 View Routing Table
+After installation, run the configuration script (configure_batman.sh):
 ```
-sudo batctl
+./configure_batman.sh
+
 ```
 
-### 2 Check the log: 
+## Verification
+
+### 1 Check the BATMAN Interface:
 ```
-sudo dmesg | grep batman-adv
+ifconfig bat0
+
 ```
 
-## Results Storage
+### 2 Verify BATMAN-Adv Nodes: 
+This should display the nodes connected in the BATMAN-Adv network.
+```
+sudo batctl n
 
-batman-adv: Routing information and logs can be accessed using batctl commands.
-
-batctl: Provides a suite of commands to manage and monitor batman-adv.
-
-alfred: Collects and distributes information among nodes, results can be accessed using ' alfred ' commands.
+```
+By following these steps and using the provided scripts, you should be able to install and configure BATMAN-Adv in your project successfully. Make sure to adapt IP addresses and interface names to your specific network configuration.
