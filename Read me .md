@@ -45,8 +45,7 @@ project-directory/
 ├── nanoInstall.sh
 ├── piInstall.sh
 ├── pirequirements.txt
-├── Read me.ipynb
-├── readme.md
+├── Readme.md
 ├── test.gv
 ├── Application
 │   ├── App.py
