@@ -99,8 +99,11 @@ By managing these key aspects, the BATMAN-adv files are fundamental in enabling 
 ### ' App.py ':
 
 **1 Initializing the Application**: Setting up necessary configurations, initializing variables, and preparing the environment.
+
 **2 Running Core Functionalities**: Executing the main functions of the application, such as processing data, running algorithms, or managing user interactions.
+
 **3 Orchestrating Other Components**: Calling functions or methods from other modules and managing the workflow of the application.
+
 **4 Handling Inputs and Outputs**: Managing input from users or other systems and producing the required outputs, whether they are files, visualizations, or other forms of data.
 
 By serving as the central script, App.py acts as the entry point for the application, coordinating the different parts of the project to work together seamlessly.
