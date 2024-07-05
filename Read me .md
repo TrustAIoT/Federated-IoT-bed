@@ -50,7 +50,6 @@ project-directory/
 ├── test.gv
 ├── Application
 │   ├── App.py
-│   ├── Untitled.ipynb
 ├── Benchmarking
 │   ├── build_mlops_pkg.sh
 │   ├── run_client.sh
