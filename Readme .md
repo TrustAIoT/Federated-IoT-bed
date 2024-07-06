@@ -137,12 +137,10 @@ cd network-auto-configuration-master/batman
 cd batman-adv
 make
 sudo make install
-
 ```
 ### 6 Load the BATMAN-Adv Kernel Module:
 ```
 sudo modprobe batman-adv
-
 ```
 ### 7 Configuring BATMAN-Adv:
 
