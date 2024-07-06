@@ -163,16 +163,32 @@ project-directory/
 ## Major Files in the Directory :
 
 ### BATMAN Advanced Files :
+```
+network-auto-configuration-master\Jetson-Nano-Projects\Projects\build\batman-adv-2022.3\net\batman-adv
+```
+**Network Configuration Scripts:**
 
-**1 Network Configuration:** These scripts configure the devices to participate in an ad-hoc network, which is essential for establishing communication between devices without relying on a central infrastructure.
+**start-batman-adv.sh:**
+Purpose: This script configures your device to participate in an ad-hoc network using BATMAN-adv.
+How it works: It sets up the necessary network interfaces, loads the BATMAN-adv module, and initializes the mesh network settings. By running this script, your device becomes part of the mesh network, enabling it to communicate with other devices running the same script.
+start-batman-adv-client.sh:
+Purpose: Similar to start-batman-adv.sh, but specifically tailored for client devices in the mesh network.
+How it works: This script focuses on configuring devices that primarily act as clients, ensuring they can join the mesh network and communicate effectively with other nodes.
+Installation Scripts:
 
-**2 Client and Server Initialization:** The start-batman-adv-client.sh script ensures that the client-side operations are correctly set up and connected to the network, enabling communication and data exchange with the server.
+**batmanInstall.sh:**
+Purpose: This script automates the installation of BATMAN-adv on your device.
+How it works: It downloads the necessary BATMAN-adv packages, compiles the source code (if needed), and installs the software on your device. This script ensures that all the required dependencies and configurations are set up correctly.
+Makefile:
 
-**3 Mesh Networking:** The start-batman-adv.sh scripts on both Jetson Nano and Raspberry Pi devices configure the nodes to act as part of a mesh network. This allows for dynamic routing of data between nodes, which is crucial for applications requiring robust and flexible network topologies.
+**Makefile:**
+Purpose: Used for building and installing BATMAN-adv from source code.
+How it works: The Makefile contains a set of directives used by the make build automation tool to compile and install BATMAN-adv. Running make followed by sudo make install will compile the BATMAN-adv source code and install it on your system.
+Module Loading:
 
-**4 Platform-Specific Setup:** Separate scripts for Jetson Nano and Raspberry Pi ensure that each platform's specific requirements and configurations are addressed, leading to optimized performance and reliability.
-
-By managing these key aspects, the BATMAN-adv files are fundamental in enabling and maintaining the ad-hoc network functionality central to your project.
+**sudo modprobe batman-adv:**
+Purpose: This command loads the BATMAN-adv kernel module into the running kernel.
+How it works: The modprobe command is used to add or remove modules from the Linux kernel. By running sudo modprobe batman-adv, you ensure that the BATMAN-adv module is loaded and ready to handle network traffic on your device.
 
 ### wandb Directory:
 ```
