@@ -39,6 +39,7 @@ extra redundancy and reliability to our connected devices as shown below in figu
 ### 1 Overview of B.A.T.M.A.N Advanced:
 
 B.A.T.M.A.N. Advanced (batman-adv) is a routing protocol designed for multi-hop ad hoc networks. This guide will walk you through the installation of batman-adv along with its associated tools, batctl and alfred. We will also explain the directory structure and how to use these tools to set up and manage your mesh network. batman-adv operates at layer 2, allowing for seamless data transmission across multiple nodes in a mesh network. This setup will help you get batman-adv up and running on your devices, enabling efficient routing and data sharing across your network.
+
 ####**Establishing Mesh Network**
 BATMAN-adv is used to establish a robust and efficient mesh network among the devices. This enables seamless communication between nodes without relying on a central infrastructure. In a mesh network, each node acts as both a client and a router, forwarding data to other nodes. This decentralized approach ensures that the network remains operational even if some nodes fail or go offline, providing higher resilience and reliability.
 
