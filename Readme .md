@@ -169,7 +169,7 @@ network-auto-configuration-master\Jetson-Nano-Projects\Projects\build\batman-adv
 **Network Configuration Scripts:**
 
 **start-batman-adv.sh:**
-Purpose: This script configures your device to participate in an ad-hoc network using BATMAN-adv.
+This script configures your device to participate in an ad-hoc network using BATMAN-adv.
 How it works: It sets up the necessary network interfaces, loads the BATMAN-adv module, and initializes the mesh network settings. By running this script, your device becomes part of the mesh network, enabling it to communicate with other devices running the same script.
 start-batman-adv-client.sh:
 Purpose: Similar to start-batman-adv.sh, but specifically tailored for client devices in the mesh network.
@@ -177,17 +177,17 @@ How it works: This script focuses on configuring devices that primarily act as c
 Installation Scripts:
 
 **batmanInstall.sh:**
-Purpose: This script automates the installation of BATMAN-adv on your device.
+This script automates the installation of BATMAN-adv on your device.
 How it works: It downloads the necessary BATMAN-adv packages, compiles the source code (if needed), and installs the software on your device. This script ensures that all the required dependencies and configurations are set up correctly.
 Makefile:
 
 **Makefile:**
-Purpose: Used for building and installing BATMAN-adv from source code.
+Used for building and installing BATMAN-adv from source code.
 How it works: The Makefile contains a set of directives used by the make build automation tool to compile and install BATMAN-adv. Running make followed by sudo make install will compile the BATMAN-adv source code and install it on your system.
 Module Loading:
 
 **sudo modprobe batman-adv:**
-Purpose: This command loads the BATMAN-adv kernel module into the running kernel.
+This command loads the BATMAN-adv kernel module into the running kernel.
 How it works: The modprobe command is used to add or remove modules from the Linux kernel. By running sudo modprobe batman-adv, you ensure that the BATMAN-adv module is loaded and ready to handle network traffic on your device.
 
 ### wandb Directory:
