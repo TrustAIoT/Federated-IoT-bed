@@ -46,7 +46,7 @@ After installation, run the configuration script (configure_batman.sh):
 ifconfig bat0
 ```
 
-### 2 Verify BATMAN-Adv Nodes: 
+### Verify BATMAN-Adv Nodes: 
 This should display the nodes connected in the BATMAN-Adv network.
 ```
 sudo batctl n
