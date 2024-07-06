@@ -40,22 +40,22 @@ extra redundancy and reliability to our connected devices as shown below in figu
 
 B.A.T.M.A.N. Advanced (batman-adv) is a routing protocol designed for multi-hop ad hoc networks. This guide will walk you through the installation of batman-adv along with its associated tools, batctl and alfred. We will also explain the directory structure and how to use these tools to set up and manage your mesh network. batman-adv operates at layer 2, allowing for seamless data transmission across multiple nodes in a mesh network. This setup will help you get batman-adv up and running on your devices, enabling efficient routing and data sharing across your network.
 
-####**Establishing Mesh Network**
+#### Establishing Mesh Network:
 BATMAN-adv is used to establish a robust and efficient mesh network among the devices. This enables seamless communication between nodes without relying on a central infrastructure. In a mesh network, each node acts as both a client and a router, forwarding data to other nodes. This decentralized approach ensures that the network remains operational even if some nodes fail or go offline, providing higher resilience and reliability.
 
-####**Enhanced Reliability**
+#### Enhanced Reliability:
 The self-healing and dynamic routing capabilities of BATMAN-adv ensure that the network remains reliable, even in the presence of node failures or changes in topology. The protocol constantly monitors the network and adapts to changes by finding the best possible routes for data packets. This automatic reconfiguration enhances the network's ability to maintain continuous operation, which is crucial for applications requiring high availability and fault tolerance.
 
-####**Improved Network Performance**
+#### Improved Network Performance:
 By optimizing routes and minimizing latency, BATMAN-adv helps achieve better network performance. The protocol's ability to dynamically select the most efficient paths for data transmission reduces delays and increases throughput. This is particularly important for applications that require real-time data transmission, such as video streaming, online gaming, and remote monitoring. Improved network performance ensures that data is delivered quickly and accurately, enhancing the overall user experience.
 
-####**File Sharing**
+#### File Sharing:
 Nodes can share files directly over the mesh network without the need for an internet connection. This peer-to-peer communication is facilitated by BATMAN-adv's efficient routing, which ensures that data packets are delivered reliably between nodes. This capability is particularly useful in environments where internet access is limited or unavailable, such as remote locations or disaster-stricken areas.
 
-####**Surveillance Systems**
+#### Surveillance Systems:
 Cameras and sensors can transmit data efficiently across the network, providing real-time monitoring and security. BATMAN-adv ensures that video feeds and sensor data are routed through the most efficient paths, reducing latency and ensuring timely delivery. This is essential for surveillance systems that require continuous monitoring and immediate response to security events.
 
-####**Emergency Communication**
+#### Emergency Communication:
 In disaster scenarios, BATMAN-adv enables quick and reliable setup of communication networks for emergency response teams. The protocol's ability to create ad-hoc networks without relying on existing infrastructure is invaluable in situations where traditional communication systems are compromised. Emergency responders can quickly establish a mesh network to coordinate their efforts, share critical information, and maintain communication in challenging environments.
 
 ### 2 Update and Upgrade Your System:
@@ -190,7 +190,7 @@ network-auto-configuration-master\Benchmarking
 ```
 network-auto-configuration-master\Benchmarking
 ```
-Server-Side Federated Learning Operations: This script is responsible for managing the server-side operations in a federated learning setup. Collects model updates from multiple clients and aggregates them to update the global model parameters also Sends the updated global model parameters back to the clients and Orchestrates the training rounds, ensuring synchronization between clients and the server. 
+**Server-Side Federated Learning Operations**: This script is responsible for managing the server-side operations in a federated learning setup. Collects model updates from multiple clients and aggregates them to update the global model parameters also Sends the updated global model parameters back to the clients and Orchestrates the training rounds, ensuring synchronization between clients and the server. 
 
 ### ' App.py ':
 
