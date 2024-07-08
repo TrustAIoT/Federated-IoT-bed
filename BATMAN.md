@@ -1,52 +1,52 @@
 # B.A.T.M.A.N. Advanced (batman-adv) Setup Guide
 
-## Run the Installation Script:
+## 1 Run the Installation Script:
 ```
 chmod +x install_batman_adv.sh
 ./install_batman_adv.sh
 ```
-## Running and Testing the Setup
+## 2 Running and Testing the Setup
 
-### Create BATMAN Interfaces:
+### 2.1 Create BATMAN Interfaces:
 You need to create BATMAN virtual interfaces for your network devices. Replace eth0 with your actual network interface.
 ```
 sudo batctl if add eth0
 ```
 
-### Bring Up the BATMAN Interface:
+### 2.2 Bring Up the BATMAN Interface:
 "Bring Up the BATMAN Interface" means to configure and activate the BATMAN (Better Approach To Mobile Ad-hoc Networking) interface on your system. This involves setting up the BATMAN-Adv (BATMAN Advanced) protocol, which operates on Layer 2 (data link layer) to create a mesh network.
 ```
 sudo ifconfig bat0 up
 ```
 
-### Assign an IP Address to the BATMAN Interface:
+### 2.3 Assign an IP Address to the BATMAN Interface:
 ```
 sudo ifconfig bat0 " IP adress "
 ```
 
-## Running The Project:
+## 3 Running The Project:
 
-### Run the Installation Script:
+### 3.1 Run the Installation Script:
 If you have a script (batmanInstall.sh) to install BATMAN-Adv, run it as follows:
 ```
 cd network-auto-configuration-master/batman
 ./batmanInstall.sh
 ```
-### Run the Configuration Script:
+### 3.2 Run the Configuration Script:
 
 After installation, run the configuration script (configure_batman.sh):
 ```
 ./configure_batman.sh
 ```
 
-## Verification
+## 4 Verification
 
-### Check the BATMAN Interface:
+### 4.1 Check the BATMAN Interface:
 ```
 ifconfig bat0
 ```
 
-### Verify BATMAN-Adv Nodes: 
+### 4.2 Verify BATMAN-Adv Nodes: 
 This should display the nodes connected in the BATMAN-Adv network.
 ```
 sudo batctl n
