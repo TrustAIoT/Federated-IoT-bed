@@ -1,12 +1,12 @@
 # Development and Validation of A Heterogeneous Wireless Mesh IoT Testbed with Distributed Machine Learning
 
-## About the Project 
+## 1 About the Project 
 
 The development of IoT devices has led to increased interests in distributed machine learning on edge devices for many researchers. However, a multitude of current distributed machine learning research is validated mainly by simulation alone. To fill the reality gap, testbeds are developed for physical deployments of these machine learning models. In this report, we present our current implementation of a wireless mesh IoT testbed consisting of the following heterogeneous devices: Raspberry Pi 4 Model B, Jetson Nano, and Jetson Orin Nano. Our wireless mesh testbed is connected through a mesh ad-hoc network, where packets are routed using the popular routing protocol, B.A.T.M.A.N IV. To validate the setup of our testbed and the multi-hop capabilities of B.A.T.M.A.N IV, we query a variety of network metrics in single-hop and multi-hop scenarios. In addition, we perform an experiment on federated learning across our testbed, in which we utilize the popular FedAVG aggregation server to train a Resnet 18 model for image classification using the Cifar10 dataset. We analyze the result of our experiment across heterogeneous devices to discover potential problems in the naive assumption of homogeneity across clients. In particular, physical deployment of models on IoT devices significantly enlarges the training time, and with the need to communicate across distance, enlarges communication time. We thus recommend some research directions to solve the problems, in which our testbed can provide assistance in physical deployment.
 
 With the popularity of Internet of Things (IoT) devices in the market, researchers increased their attention leveraging the mass computational power available from the massive pool of IoT devices [1]. Distributed Machine Learning (DML) research has been accelerated during the current century, of which various models and techniques investigate different aspects like architecture, communication, protocols, applications, security and privacy. However, the performance evaluation and deployments of these models often utilized simulation techniques. These simulation tools are capable of simulating various delays and network conditions across devices, but various nuances of communication between devices are still missing from various simulation models. In addition, much machine learning research assumes homogeneity across various conditions such as statistical homogeneity in data and models, and system homogeneity in devices. To fill the reality gap, testbeds are developed for physical deployments of these machine learning models.
 
-## Network Topology 
+## 2 Network Topology 
 
 In this network,
 some devices or nodes are connected to two or more nodes with a point-to-point link, but not all
@@ -24,7 +24,7 @@ extra redundancy and reliability to our connected devices as shown below in figu
 ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/2c517eea-754e-4754-a9b4-b48b69558782)
 
 
-## Hardware Devices 
+## 3 Hardware Devices 
 | Item | Description | Image |
 |------|-------------|-------|
 | Waveshare Jetson Nano Development/Expansion Kit BO1 (3x) | The Jetson Nano developer boards utilize NVIDIA’s JetPack SDK to provide a full development environment for hardware-accelerated AI edge development. We utilize the Jetson Nanos as clients for gpu-accelerated distributed machine learning. [Link](https://www.amazon.com/dp/B09R4MH39B) | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/6ea33e27-aa26-4e1e-a36c-e359b6941534) |
@@ -34,9 +34,9 @@ extra redundancy and reliability to our connected devices as shown below in figu
 | Panda Wireless PAU0B AC600 Dual Band Wireless USB Adapter (1x) | The Panda Wireless USB adapter allowed us to configure our Jetson Nano module to act as a gateway connecting our testbed’s mesh network to our lab’s router’s internet connection. Any network interface could work for this purpose but we found the Panda Wireless adapter to be extremely easy to set up for our Linux environment compared to other adapters. [Link](https://www.amazon.com/dp/B08NPX2X4Z?tag=bravesoftwa04-20&linkCode=osi&th=1&psc=1&language=en_US) | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/af1d75d5-630d-40e9-b443-8efd0da69f66) |
 | Sensor Kit | In order to create our own custom datasets for training our lab’s models we have purchased a sensor kit to allow our testbed to collect sensor data. The sensor kit features various sensor collection devices such as: - Temperature sensors - Microphone sound sensors - Vibration switch - Infrared sensor - Obstacle avoidance sensor - Infrared tracking sensor | ![image.png](https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/assets/81721268/5e1726e1-e5d4-43eb-97e0-8d3a6c50dc60) |
 
-## B.A.T.M.A.N. Advanced (batman-adv) Setup Guide
+## 4 B.A.T.M.A.N. Advanced (batman-adv) Setup Guide
 
-### 1 Overview of B.A.T.M.A.N Advanced:
+### 4.1 Overview of B.A.T.M.A.N Advanced:
 
 B.A.T.M.A.N. Advanced (batman-adv) is a routing protocol designed for multi-hop ad hoc networks. This guide will walk you through the installation of batman-adv along with its associated tools, batctl and alfred. We will also explain the directory structure and how to use these tools to set up and manage your mesh network. batman-adv operates at layer 2, allowing for seamless data transmission across multiple nodes in a mesh network. This setup will help you get batman-adv up and running on your devices, enabling efficient routing and data sharing across your network.
 
@@ -58,67 +58,67 @@ Cameras and sensors can transmit data efficiently across the network, providing 
 #### Emergency Communication:
 In disaster scenarios, BATMAN-adv enables quick and reliable setup of communication networks for emergency response teams. The protocol's ability to create ad-hoc networks without relying on existing infrastructure is invaluable in situations where traditional communication systems are compromised. Emergency responders can quickly establish a mesh network to coordinate their efforts, share critical information, and maintain communication in challenging environments.
 
-### 2 Update and Upgrade Your System:
+### 4.2 Update and Upgrade Your System:
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
-### 3 Install Required Packages:
+### 4.3 Install Required Packages:
 ```
 sudo apt-get install build-essential git libnl-3-dev libnl-genl-3-dev
 ```
-### 4 Clone the BATMAN-Adv Repository:
+### 4.4 Clone the BATMAN-Adv Repository:
 Navigate to your network-auto-configuration-master/batman/ directory and clone the BATMAN-Adv repository.
 ```
 cd network-auto-configuration-master/batman
 ```
-### 5 Build and Install BATMAN-Adv:
+### 4.5 Build and Install BATMAN-Adv:
 ```
 cd batman-adv
 make
 sudo make install
 ```
-### 6 Load the BATMAN-Adv Kernel Module:
+### 4.6 Load the BATMAN-Adv Kernel Module:
 ```
 sudo modprobe batman-adv
 ```
-### 7 Configuring BATMAN-Adv:
+### 4.7 Configuring BATMAN-Adv:
 
 https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/blob/main/BATMAN%20.md
 
 
-## Setting up the FEDML 
+## 5 Setting up the FEDML 
 
 FedML plays a crucial role in our project by providing a structured and efficient framework for implementing federated learning across distributed edge devices, such as the Jetson Nano Development/Expansion Kits. The use of FedML brings several key advantages and functionalities that are essential for the success of our distributed machine learning project. In summary, FedML is integral to our project as it provides the necessary tools and infrastructure to implement federated learning across distributed edge devices. Its capabilities in data privacy, scalability, cost efficiency, real-time processing, and flexibility make it an indispensable component for achieving our project goals effectively and efficiently. By leveraging FedML, we can harness the power of edge computing with the Jetson Nano kits to build a robust and scalable distributed machine learning system.
 
-### 1 Clone the FedML Repository:
+### 5.1 Clone the FedML Repository:
 ```
 git clone https://github.com/FedML-AI/FedML.git
 cd FedML
 ```
-### 2 Install Dependencies:
+### 5.2 Install Dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-### 3 Build MLOps Package:
+### 5.3 Build MLOps Package:
 ```
 cd benchmark
 sh build_mlops_pkg.sh
 ```
-## An Overview of setting up FEDML and review architecture
+## 6 An Overview of setting up FEDML and review architecture
 
 https://doc.fedml.ai/federate/getting_started
 
 
-## Running the Main Application
+## 7 Running the Main Application
 
-### 1 Run the Application Script
+### 7.1 Run the Application Script
 ```
 cd project-root/application/
 python App.py
 ```
-## Project Directory Structure 
+## 8 Project Directory Structure 
 project-directory/
 ```plaintext
 project-directory/
@@ -160,9 +160,9 @@ project-directory/
 │   ├── requirements.txt
 │   ├── Projects
 ```
-## Major Files in the Directory :
+## 9 Major Files in the Directory :
 
-### BATMAN Advanced Files :
+### 9.1 BATMAN Advanced Files :
 ```
 network-auto-configuration-master\Jetson-Nano-Projects\Projects\build\batman-adv-2022.3\net\batman-adv
 ```
@@ -196,19 +196,19 @@ network-auto-configuration-master\SystemBasedClientSelection\wandb
 ```
 **debug-cli.root.log, debug-cli.saintlab.log, debug-internal.log, debug.log, latest-run** : Log files generated by the Weights & Biases (wandb) tool for experiment tracking and logging.
 
-### ' torch_client.py ':
+### 9.2 ' torch_client.py ':
 ```
 network-auto-configuration-master\Benchmarking
 ```
 **Client-Side Federated Learning Operations**: This script is responsible for handling the client-side operations in a federated learning setup. Trains the local machine learning model on the client’s local dataset also Computes updates to the model parameters based on the local training data and Sends model updates to the central server and receives the global model parameters from the server.
 
-### ' torch_server.py ':
+### 9.3 ' torch_server.py ':
 ```
 network-auto-configuration-master\Benchmarking
 ```
 **Server-Side Federated Learning Operations**: This script is responsible for managing the server-side operations in a federated learning setup. Collects model updates from multiple clients and aggregates them to update the global model parameters also Sends the updated global model parameters back to the clients and Orchestrates the training rounds, ensuring synchronization between clients and the server. 
 
-### ' App.py ':
+### 9.4 ' App.py ':
 
 **1 Initializing the Application**: Setting up necessary configurations, initializing variables, and preparing the environment.
 
