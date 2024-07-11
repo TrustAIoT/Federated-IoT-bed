@@ -84,7 +84,7 @@ sudo modprobe batman-adv
 ```
 ### 4.7 Configuring BATMAN-Adv:
 
-https://github.com/giridharsamineni/FEDML-AND-DISTRUBUTED-NETWORK/blob/main/BATMAN%20.md
+https://github.com/tluocs/FedML-BATMAN/blob/main/BATMAN.md
 
 
 ## 5 Setting up the FEDML 
