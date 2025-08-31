@@ -1,0 +1,148 @@
+
+training_type != FEDML_TRAINING_PLATFORM_CROSS_DEVICE and training_type != FEDML_TRAINING_PLATFORM_CROSS_SILO
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:44:25] [INFO] [__init__.py:103:init] args.rank = 0, args.worker_num = 0
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:44:25] [INFO] [__init__.py:154:update_client_specific_args] data_silo_config is not defined in fedml_config.yaml
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:44:25] [INFO] [__init__.py:121:print_args] ==== args = {'yaml_config_file': '.\\config\\simulation\\fedml_config.yaml', 'run_id': '0', 'rank': 0, 'local_rank': 0, 'node_rank': 0, 'role': 'client', 'yaml_paths': ['.\\config\\simulation\\fedml_config.yaml'], 'training_type': 'simulation', 'random_seed': 0, 'dataset': 'mnist', 'data_cache_dir': 'C:\\Users\\Sony/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'model': 'lr', 'federated_optimizer': 'FedAvg', 'client_id_list': None, 'client_num_in_total': 10, 'client_num_per_round': 5, 'comm_round': 3, 'epochs': 5, 'batch_size': 10, 'client_optimizer': 'sgd', 'learning_rate': 0.03, 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 0, 'using_gpu': False, 'gpu_mapping_file': 'config/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'sp', 'is_mobile': 0, 'log_file_dir': 'C:\\Users\\Sony\\fedml-server\\fedml\\logs', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_torch_fedavg_shakespeare_lr', 'using_mlops': False, 'sys_perf_profiling': True, 'config_version': 'release', 'current_running_dir': 'C:\\Users\\Sony\\fedml-client', 'os_name': 'Windows', 'version': 'release', 'device_id': 'A9CF22B4-A038-11E6-88A1-D0577B499363', 'cloud_region': '', 'mqtt_config_path': '', 's3_config_path': '', 'log_server_url': 'https://open.fedml.ai/fedmlLogsServer/logs/update'}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:44:25] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x000001C0D49A3E10>, using_gpu = False, device_id = 0, device_type = cpu
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:44:25] [INFO] [device.py:48:get_device] device = cpu
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:44:25] [INFO] [data_loader.py:21:download_mnist] C:\Users\Sony/fedml_data\MNIST.zip
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:44:25] [INFO] [data_loader.py:6:load_data] load_data. dataset_name = mnist
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:14] [INFO] [data_loader.py:123:load_partition_data_mnist] loading data...
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [data_loader.py:141:load_partition_data_mnist] finished the loading data
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [contribution_assessor_manager.py:16:_build_assessor] contribution_alg is not set, assessor is None
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [fedavg_api.py:40:__init__] model = LogisticRegression(
+  (linear): Linear(in_features=784, out_features=10, bias=True)
+)
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [fedavg_api.py:43:__init__] self.model_trainer = <fedml.ml.trainer.my_model_trainer_classification.ModelTrainerCLS object at 0x000001C0881864D0>
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [fedavg_api.py:52:_setup_clients] ############setup_clients (START)#############
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [fedavg_api.py:64:_setup_clients] ############setup_clients (END)#############
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [fedavg_api.py:67:train] self.model_trainer = <fedml.ml.trainer.my_model_trainer_classification.ModelTrainerCLS object at 0x000001C0881864D0>
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [fedavg_api.py:74:train] ################Communication round : 0
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [fedavg_api.py:134:_client_sampling] client_indexes = [993 859 298 553 672]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [fedavg_api.py:85:train] client_indexes = [993 859 298 553 672]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:23] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 993	Epoch: 0	Loss: 2.295648
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 993	Epoch: 1	Loss: 2.179617
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 993	Epoch: 2	Loss: 2.103423
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 993	Epoch: 3	Loss: 2.049375
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 993	Epoch: 4	Loss: 2.007985
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 859	Epoch: 0	Loss: 2.094135
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 859	Epoch: 1	Loss: 1.989443
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 859	Epoch: 2	Loss: 1.927904
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 859	Epoch: 3	Loss: 1.883923
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 859	Epoch: 4	Loss: 1.849707
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 298	Epoch: 0	Loss: 2.093027
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 298	Epoch: 1	Loss: 2.055961
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 298	Epoch: 2	Loss: 2.022799
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 298	Epoch: 3	Loss: 1.994548
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 298	Epoch: 4	Loss: 1.970706
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 553	Epoch: 0	Loss: 2.018983
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 553	Epoch: 1	Loss: 1.976460
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 553	Epoch: 2	Loss: 1.945287
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 553	Epoch: 3	Loss: 1.920047
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 553	Epoch: 4	Loss: 1.898635
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 672	Epoch: 0	Loss: 2.074242
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 672	Epoch: 1	Loss: 2.018706
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 672	Epoch: 2	Loss: 1.980964
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 672	Epoch: 3	Loss: 1.951769
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 672	Epoch: 4	Loss: 1.927458
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:24] [INFO] [fedavg_api.py:178:_local_test_on_all_clients] ################local_test_on_all_clients : 0
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [fedavg_api.py:226:_local_test_on_all_clients] {'training_acc': 0.33152244421380384, 'training_loss': 2.164383144669339}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [fedavg_api.py:235:_local_test_on_all_clients] {'test_acc': 0.33143399810066476, 'test_loss': 2.1619633779873793}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [fedavg_api.py:74:train] ################Communication round : 1
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [fedavg_api.py:134:_client_sampling] client_indexes = [507 818 452 368 242]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [fedavg_api.py:85:train] client_indexes = [507 818 452 368 242]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 507	Epoch: 0	Loss: 2.378140
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 507	Epoch: 1	Loss: 2.276607
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 507	Epoch: 2	Loss: 2.196741
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 507	Epoch: 3	Loss: 2.135121
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 507	Epoch: 4	Loss: 2.087108
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:27] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 818	Epoch: 0	Loss: 2.126352
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 818	Epoch: 1	Loss: 2.038428
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 818	Epoch: 2	Loss: 1.984218
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 818	Epoch: 3	Loss: 1.947330
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 818	Epoch: 4	Loss: 1.919494
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 452	Epoch: 0	Loss: 1.970882
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 452	Epoch: 1	Loss: 1.927730
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 452	Epoch: 2	Loss: 1.893059
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 452	Epoch: 3	Loss: 1.863541
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 452	Epoch: 4	Loss: 1.837990
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 368	Epoch: 0	Loss: 1.868497
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 368	Epoch: 1	Loss: 1.849882
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 368	Epoch: 2	Loss: 1.833884
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 368	Epoch: 3	Loss: 1.819812
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 368	Epoch: 4	Loss: 1.807290
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 242	Epoch: 0	Loss: 2.010756
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 242	Epoch: 1	Loss: 1.929796
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 242	Epoch: 2	Loss: 1.874559
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 242	Epoch: 3	Loss: 1.833433
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 242	Epoch: 4	Loss: 1.801453
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:28] [INFO] [fedavg_api.py:178:_local_test_on_all_clients] ################local_test_on_all_clients : 1
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [fedavg_api.py:226:_local_test_on_all_clients] {'training_acc': 0.386919434353918, 'training_loss': 2.126279285830046}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [fedavg_api.py:235:_local_test_on_all_clients] {'test_acc': 0.38787138787138786, 'test_loss': 2.1245242724375295}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [fedavg_api.py:74:train] ################Communication round : 2
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [fedavg_api.py:134:_client_sampling] client_indexes = [ 37 726 846 295 924]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [fedavg_api.py:85:train] client_indexes = [ 37 726 846 295 924]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 37	Epoch: 0	Loss: 2.333961
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 37	Epoch: 1	Loss: 2.293152
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 37	Epoch: 2	Loss: 2.248867
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 37	Epoch: 3	Loss: 2.205734
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 37	Epoch: 4	Loss: 2.168498
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 726	Epoch: 0	Loss: 2.244417
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 726	Epoch: 1	Loss: 2.084044
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 726	Epoch: 2	Loss: 2.001910
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 726	Epoch: 3	Loss: 1.948543
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 726	Epoch: 4	Loss: 1.909193
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 846	Epoch: 0	Loss: 2.296080
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 846	Epoch: 1	Loss: 2.181883
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 846	Epoch: 2	Loss: 2.105253
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 846	Epoch: 3	Loss: 2.054423
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 846	Epoch: 4	Loss: 2.017610
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 295	Epoch: 0	Loss: 2.206556
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 295	Epoch: 1	Loss: 2.103259
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 295	Epoch: 2	Loss: 2.042107
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 295	Epoch: 3	Loss: 1.998658
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 295	Epoch: 4	Loss: 1.964580
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 924	Epoch: 0	Loss: 2.186934
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 924	Epoch: 1	Loss: 2.112773
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 924	Epoch: 2	Loss: 2.063538
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 924	Epoch: 3	Loss: 2.026108
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 924	Epoch: 4	Loss: 1.995919
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:31] [INFO] [fedavg_api.py:178:_local_test_on_all_clients] ################local_test_on_all_clients : 2
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:34] [INFO] [fedavg_api.py:226:_local_test_on_all_clients] {'training_acc': 0.4853074727555786, 'training_loss': 2.060815911289627}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 04:45:34] [INFO] [fedavg_api.py:235:_local_test_on_all_clients] {'test_acc': 0.4860941527608194, 'test_loss': 2.058346553276423}

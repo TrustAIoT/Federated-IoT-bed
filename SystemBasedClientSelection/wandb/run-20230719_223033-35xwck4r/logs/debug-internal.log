@@ -1,0 +1,214 @@
+2023-07-19 22:30:33,699 INFO    StreamThr :3096 [internal.py:wandb_internal():90] W&B internal server running at pid: 3096, started at: 2023-07-19 22:30:33.698411
+2023-07-19 22:30:33,707 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: status
+2023-07-19 22:30:33,707 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: status
+2023-07-19 22:30:33,710 DEBUG   SenderThread:3096 [sender.py:send():302] send: header
+2023-07-19 22:30:33,710 INFO    WriterThread:3096 [datastore.py:open_for_write():75] open: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\run-35xwck4r.wandb
+2023-07-19 22:30:33,801 DEBUG   SenderThread:3096 [sender.py:send():302] send: run
+2023-07-19 22:30:34,282 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: check_version
+2023-07-19 22:30:34,285 INFO    SenderThread:3096 [dir_watcher.py:__init__():216] watching files in: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files
+2023-07-19 22:30:34,285 INFO    SenderThread:3096 [sender.py:_start_run_threads():913] run started: 35xwck4r with start time 1689823833.686441
+2023-07-19 22:30:34,285 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:30:34,286 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:30:34,287 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: check_version
+2023-07-19 22:30:34,430 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: run_start
+2023-07-19 22:30:34,459 DEBUG   HandlerThread:3096 [meta.py:__init__():35] meta init
+2023-07-19 22:30:34,465 DEBUG   HandlerThread:3096 [meta.py:__init__():50] meta init done
+2023-07-19 22:30:34,469 DEBUG   HandlerThread:3096 [meta.py:probe():216] probe
+2023-07-19 22:30:34,471 DEBUG   HandlerThread:3096 [meta.py:_setup_git():206] setup git
+2023-07-19 22:30:34,623 DEBUG   HandlerThread:3096 [meta.py:_setup_git():213] setup git done
+2023-07-19 22:30:34,623 DEBUG   HandlerThread:3096 [meta.py:_save_pip():54] save pip
+2023-07-19 22:30:34,624 DEBUG   HandlerThread:3096 [meta.py:_save_pip():68] save pip done
+2023-07-19 22:30:34,624 DEBUG   HandlerThread:3096 [meta.py:probe():254] probe done
+2023-07-19 22:30:34,769 DEBUG   SenderThread:3096 [sender.py:send():302] send: files
+2023-07-19 22:30:34,769 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-07-19 22:30:34,770 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-19 22:30:34,771 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: stop_status
+2023-07-19 22:30:34,965 DEBUG   SenderThread:3096 [sender.py:send():302] send: telemetry
+2023-07-19 22:30:35,303 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:30:35,303 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\requirements.txt
+2023-07-19 22:30:35,304 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\wandb-summary.json
+2023-07-19 22:30:35,304 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\wandb-metadata.json
+2023-07-19 22:30:35,440 INFO    Thread-22 :3096 [upload_job.py:push():138] Uploaded file C:\Users\Sony\AppData\Local\Temp\tmpo605mh3rwandb\33a1an3m-wandb-metadata.json
+2023-07-19 22:30:37,317 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:31:03,090 DEBUG   SenderThread:3096 [sender.py:send():302] send: stats
+2023-07-19 22:31:05,608 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\config.yaml
+2023-07-19 22:31:18,616 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-19 22:31:18,617 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: stop_status
+2023-07-19 22:31:27,864 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:31:34,472 DEBUG   SenderThread:3096 [sender.py:send():302] send: stats
+2023-07-19 22:31:35,933 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:31:36,419 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:36,421 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:36,422 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:36,424 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:36,428 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:36,428 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:36,429 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:36,431 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:36,431 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:36,433 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:36,434 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:36,435 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:36,436 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:36,437 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:36,437 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:36,439 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:36,943 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\wandb-summary.json
+2023-07-19 22:31:37,949 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:31:38,367 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:38,368 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:38,369 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:38,371 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:38,373 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:38,375 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:38,376 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:38,378 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:38,378 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:38,380 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:38,380 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:38,381 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:38,382 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:38,383 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:38,383 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:38,384 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:38,960 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\wandb-summary.json
+2023-07-19 22:31:39,971 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:31:40,564 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:40,566 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:40,567 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:40,567 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:40,570 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:40,573 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: partial_history
+2023-07-19 22:31:40,575 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:40,575 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:40,576 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:40,577 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:40,579 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:40,579 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:40,580 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:40,581 DEBUG   SenderThread:3096 [sender.py:send():302] send: history
+2023-07-19 22:31:40,581 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:40,582 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:40,647 DEBUG   SenderThread:3096 [sender.py:send():302] send: exit
+2023-07-19 22:31:40,647 INFO    SenderThread:3096 [sender.py:send_exit():438] handling exit code: 0
+2023-07-19 22:31:40,647 INFO    SenderThread:3096 [sender.py:send_exit():440] handling runtime: 66
+2023-07-19 22:31:40,648 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:40,649 INFO    SenderThread:3096 [sender.py:send_exit():446] send defer
+2023-07-19 22:31:40,650 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:40,650 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 0
+2023-07-19 22:31:40,651 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:40,651 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 0
+2023-07-19 22:31:40,652 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 1
+2023-07-19 22:31:40,653 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:40,653 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 1
+2023-07-19 22:31:40,789 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:40,790 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 1
+2023-07-19 22:31:40,790 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 2
+2023-07-19 22:31:40,793 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:40,794 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:40,794 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 2
+2023-07-19 22:31:40,794 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:40,795 DEBUG   SenderThread:3096 [sender.py:send():302] send: stats
+2023-07-19 22:31:40,796 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:40,797 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 2
+2023-07-19 22:31:40,797 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 3
+2023-07-19 22:31:40,798 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:40,798 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 3
+2023-07-19 22:31:40,800 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:40,800 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 3
+2023-07-19 22:31:40,801 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 4
+2023-07-19 22:31:40,801 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:40,802 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 4
+2023-07-19 22:31:40,802 DEBUG   SenderThread:3096 [sender.py:send():302] send: summary
+2023-07-19 22:31:40,804 INFO    SenderThread:3096 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-19 22:31:40,805 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:40,805 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 4
+2023-07-19 22:31:40,805 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 5
+2023-07-19 22:31:40,806 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:40,806 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 5
+2023-07-19 22:31:40,809 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:40,809 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 5
+2023-07-19 22:31:40,809 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 6
+2023-07-19 22:31:40,810 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:40,810 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 6
+2023-07-19 22:31:40,811 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:40,811 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 6
+2023-07-19 22:31:40,897 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:40,983 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\wandb-summary.json
+2023-07-19 22:31:41,994 INFO    Thread-16 :3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:31:43,122 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 7
+2023-07-19 22:31:43,122 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:43,123 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:43,123 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 7
+2023-07-19 22:31:43,123 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:43,123 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 7
+2023-07-19 22:31:43,123 INFO    SenderThread:3096 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-07-19 22:31:43,225 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,019 INFO    SenderThread:3096 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:31:44,020 INFO    SenderThread:3096 [dir_watcher.py:finish():392] scan: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files
+2023-07-19 22:31:44,020 INFO    SenderThread:3096 [dir_watcher.py:finish():406] scan save: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\config.yaml config.yaml
+2023-07-19 22:31:44,021 INFO    SenderThread:3096 [dir_watcher.py:finish():406] scan save: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log output.log
+2023-07-19 22:31:44,022 INFO    SenderThread:3096 [dir_watcher.py:finish():406] scan save: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\requirements.txt requirements.txt
+2023-07-19 22:31:44,029 INFO    SenderThread:3096 [dir_watcher.py:finish():406] scan save: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\wandb-metadata.json wandb-metadata.json
+2023-07-19 22:31:44,029 INFO    SenderThread:3096 [dir_watcher.py:finish():406] scan save: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\wandb-summary.json wandb-summary.json
+2023-07-19 22:31:44,032 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 8
+2023-07-19 22:31:44,032 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,034 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:44,034 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 8
+2023-07-19 22:31:44,038 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:44,039 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 8
+2023-07-19 22:31:44,039 INFO    SenderThread:3096 [file_pusher.py:finish():171] shutting down file pusher
+2023-07-19 22:31:44,139 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,139 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,241 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,241 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,343 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,343 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,445 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,446 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,523 INFO    Thread-26 :3096 [upload_job.py:push():138] Uploaded file C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\wandb-summary.json
+2023-07-19 22:31:44,548 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,549 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,645 INFO    Thread-24 :3096 [upload_job.py:push():138] Uploaded file C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\output.log
+2023-07-19 22:31:44,650 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,650 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,654 INFO    Thread-23 :3096 [upload_job.py:push():138] Uploaded file C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\config.yaml
+2023-07-19 22:31:44,664 INFO    Thread-25 :3096 [upload_job.py:push():138] Uploaded file C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\files\requirements.txt
+2023-07-19 22:31:44,755 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,755 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,857 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:44,857 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:44,877 INFO    Thread-15 (_thread_body):3096 [sender.py:transition_state():459] send defer: 9
+2023-07-19 22:31:44,878 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:44,878 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 9
+2023-07-19 22:31:44,878 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:44,878 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 9
+2023-07-19 22:31:44,959 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:45,302 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 10
+2023-07-19 22:31:45,302 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:45,303 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:45,303 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 10
+2023-07-19 22:31:45,304 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:45,304 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 10
+2023-07-19 22:31:45,305 INFO    SenderThread:3096 [sender.py:transition_state():459] send defer: 11
+2023-07-19 22:31:45,305 DEBUG   SenderThread:3096 [sender.py:send():302] send: final
+2023-07-19 22:31:45,306 DEBUG   SenderThread:3096 [sender.py:send():302] send: footer
+2023-07-19 22:31:45,306 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: defer
+2023-07-19 22:31:45,306 INFO    HandlerThread:3096 [handler.py:handle_request_defer():164] handle defer: 11
+2023-07-19 22:31:45,307 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: defer
+2023-07-19 22:31:45,307 INFO    SenderThread:3096 [sender.py:send_request_defer():455] handle sender defer: 11
+2023-07-19 22:31:45,405 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-19 22:31:45,405 DEBUG   SenderThread:3096 [sender.py:send_request():316] send_request: poll_exit
+2023-07-19 22:31:45,406 INFO    SenderThread:3096 [file_pusher.py:join():176] waiting for file pusher
+2023-07-19 22:31:45,862 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: sampled_history
+2023-07-19 22:31:45,865 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: get_summary
+2023-07-19 22:31:45,867 INFO    MainThread:3096 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2023-07-19 22:31:45,867 INFO    MainThread:3096 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2023-07-19 22:31:45,871 INFO    MainThread:3096 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2023-07-19 22:31:45,873 DEBUG   HandlerThread:3096 [handler.py:handle_request():141] handle_request: shutdown
+2023-07-19 22:31:45,873 INFO    HandlerThread:3096 [handler.py:finish():810] shutting down handler
+2023-07-19 22:31:46,315 INFO    WriterThread:3096 [datastore.py:close():279] close: C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\wandb\run-20230719_223033-35xwck4r\run-35xwck4r.wandb
+2023-07-19 22:31:46,772 INFO    SenderThread:3096 [sender.py:finish():1312] shutting down sender
+2023-07-19 22:31:46,772 INFO    SenderThread:3096 [file_pusher.py:finish():171] shutting down file pusher
+2023-07-19 22:31:46,772 INFO    SenderThread:3096 [file_pusher.py:join():176] waiting for file pusher
+2023-07-19 22:31:46,884 INFO    MainThread:3096 [internal.py:handle_exit():80] Internal process exited

@@ -1,0 +1,4 @@
+BROKER_HOST: 'nano'
+BROKER_PORT: 1883
+MQTT_USER: "jetson"
+MQTT_PWD: "jetson"

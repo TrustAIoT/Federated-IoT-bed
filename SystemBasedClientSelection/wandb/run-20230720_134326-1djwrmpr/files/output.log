@@ -1,0 +1,13 @@
+
+training_type != FEDML_TRAINING_PLATFORM_CROSS_DEVICE and training_type != FEDML_TRAINING_PLATFORM_CROSS_SILO
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 18:43:29] [INFO] [__init__.py:103:init] args.rank = 0, args.worker_num = 0
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 18:43:29] [INFO] [__init__.py:154:update_client_specific_args] data_silo_config is not defined in fedml_config.yaml
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 18:43:29] [INFO] [__init__.py:121:print_args] ==== args = {'yaml_config_file': '.\\config\\simulation\\fedml_config.yaml', 'run_id': '0', 'rank': 0, 'local_rank': 0, 'node_rank': 0, 'role': 'client', 'yaml_paths': ['.\\config\\simulation\\fedml_config.yaml'], 'training_type': 'simulation', 'random_seed': 0, 'dataset': 'mnist', 'data_cache_dir': 'C:\\Users\\Sony/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'model': 'lr', 'federated_optimizer': 'FedAvg', 'client_id_list': None, 'client_num_in_total': 10, 'client_num_per_round': 5, 'comm_round': 3, 'epochs': 5, 'batch_size': 10, 'client_optimizer': 'sgd', 'learning_rate': 0.03, 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 0, 'using_gpu': False, 'gpu_mapping_file': 'config/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'sp', 'is_mobile': 0, 'log_file_dir': 'C:\\Users\\Sony\\fedml-server\\fedml\\logs', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_torch_fedavg_shakespeare_lr', 'using_mlops': False, 'sys_perf_profiling': True, 'config_version': 'release', 'current_running_dir': 'C:\\Users\\Sony\\fedml-client', 'os_name': 'Windows', 'version': 'release', 'device_id': 'A9CF22B4-A038-11E6-88A1-D0577B499363', 'cloud_region': '', 'mqtt_config_path': '', 's3_config_path': '', 'log_server_url': 'https://open.fedml.ai/fedmlLogsServer/logs/update'}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 18:43:29] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x000001CDD79F4850>, using_gpu = False, device_id = 0, device_type = cpu
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 18:43:29] [INFO] [device.py:48:get_device] device = cpu
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 18:43:29] [ERROR] [mlops_runtime_log.py:36:handle_exception] Uncaught exception
+Traceback (most recent call last):
+  File "C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\main_fedml_system_selection.py", line 22, in <module>
+    print(args.custom_client_selection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Arguments' object has no attribute 'custom_client_selection'

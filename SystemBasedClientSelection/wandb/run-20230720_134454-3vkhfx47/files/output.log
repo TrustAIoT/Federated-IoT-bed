@@ -1,0 +1,210 @@
+
+------------------server client_id_list = [1]-------------------
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [__init__.py:101:init] args.rank = 0, args.process_id = 0, args.worker_num = 1
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [__init__.py:154:update_client_specific_args] data_silo_config is not defined in fedml_config.yaml
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [__init__.py:121:print_args] ==== args = {'yaml_config_file': '.\\config\\fedml_config.yaml', 'run_id': '0', 'rank': 0, 'local_rank': 0, 'node_rank': 0, 'role': 'client', 'yaml_paths': ['.\\config\\fedml_config.yaml'], 'training_type': 'cross_silo', 'random_seed': 0, 'scenario': 'horizontal', 'using_mlops': False, 'config_version': 'release', 'bootstrap': 'config/bootstrap.sh', 'dataset': 'mnist', 'data_cache_dir': 'C:\\Users\\Sony/Downloads/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'preprocessed': False, 'model': 'cnn', 'model_file_cache_folder': './model_file_cache', 'global_model_file_path': './model_file_cache/global_model.pt', 'custom_client_selection': True, 'federated_optimizer': 'FedAvg', 'client_id_list': '[1]', 'client_num_in_total': 1, 'client_num_per_round': 1, 'comm_round': 5, 'epochs': 1, 'batch_size': 4, 'client_optimizer': 'adam', 'learning_rate': 0.001, 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 1, 'using_gpu': False, 'backend': 'MQTT_S3', 'mqtt_config_path': '', 's3_config_path': '', 'log_file_dir': 'C:\\Users\\Sony\\fedml-server\\fedml\\logs', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_system_selection', 'n_proc_in_silo': 1, 'proc_rank_in_silo': 0, 'comm': None, 'enable_cuda_rpc': False, 'cpu_transfer': False, 'process_id': 0, 'sys_perf_profiling': True, 'current_running_dir': 'C:\\Users\\Sony\\fedml-client', 'os_name': 'Windows', 'version': 'release', 'device_id': 'A9CF22B4-A038-11E6-88A1-D0577B499363', 'cloud_region': '', 'log_server_url': 'https://open.fedml.ai/fedmlLogsServer/logs/update'}
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [device.py:113:get_device] devide_type = cpu, gpu_mapping_file = None, gpu_mapping_key = None, gpu_id = None
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x000001AB957183D0>, using_gpu = False, device_id = None, device_type = cpu
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [gpu_mapping_cross_silo.py:16:mapping_processes_to_gpu_device_from_yaml_file_cross_silo] Training on device: cpu
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [device.py:131:get_device] device = cpu
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [main_fedml_system_selection.py:22:<module>] True
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [main_fedml_system_selection.py:22:<module>]
+[FedML-Client @device-id-1] [Thu, 20 Jul 2023 18:44:57] [INFO] [data_loader.py:21:download_mnist] C:\Users\Sony/Downloads/fedml_data\MNIST.zip
+  0% [                                                                      ]         0 / 128363870
+  0% [                                                                      ]      8192 / 128363870
+  0% [                                                                      ]     16384 / 128363870
+  0% [                                                                      ]     24576 / 128363870
+  0% [                                                                      ]     32768 / 128363870
+  0% [                                                                      ]     40960 / 128363870
+  0% [                                                                      ]     49152 / 128363870
+  0% [                                                                      ]     57344 / 128363870
+  0% [                                                                      ]     65536 / 128363870
+  0% [                                                                      ]     73728 / 128363870
+  0% [                                                                      ]     81920 / 128363870
+  0% [                                                                      ]     90112 / 128363870
+  0% [                                                                      ]     98304 / 128363870
+  0% [                                                                      ]    106496 / 128363870
+  0% [                                                                      ]    114688 / 128363870
+  0% [                                                                      ]    122880 / 128363870
+  0% [                                                                      ]    131072 / 128363870
+  0% [                                                                      ]    139264 / 128363870
+  0% [                                                                      ]    147456 / 128363870
+  0% [                                                                      ]    155648 / 128363870
+  0% [                                                                      ]    163840 / 128363870
+  0% [                                                                      ]    172032 / 128363870
+  0% [                                                                      ]    180224 / 128363870
+  0% [                                                                      ]    188416 / 128363870
+  0% [                                                                      ]    196608 / 128363870
+  0% [                                                                      ]    204800 / 128363870
+  0% [                                                                      ]    212992 / 128363870
+  0% [                                                                      ]    221184 / 128363870
+  0% [                                                                      ]    229376 / 128363870
+  0% [                                                                      ]    237568 / 128363870
+  0% [                                                                      ]    245760 / 128363870
+  0% [                                                                      ]    253952 / 128363870
+  0% [                                                                      ]    262144 / 128363870
+  0% [                                                                      ]    270336 / 128363870
+  0% [                                                                      ]    278528 / 128363870
+  0% [                                                                      ]    286720 / 128363870
+  0% [                                                                      ]    294912 / 128363870
+  0% [                                                                      ]    303104 / 128363870
+  0% [                                                                      ]    311296 / 128363870
+  0% [                                                                      ]    319488 / 128363870
+  0% [                                                                      ]    327680 / 128363870
+  0% [                                                                      ]    335872 / 128363870
+  0% [                                                                      ]    344064 / 128363870
+  0% [                                                                      ]    352256 / 128363870
+  0% [                                                                      ]    360448 / 128363870
+  0% [                                                                      ]    368640 / 128363870
+  0% [                                                                      ]    376832 / 128363870
+  0% [                                                                      ]    385024 / 128363870
+  0% [                                                                      ]    393216 / 128363870
+  0% [                                                                      ]    401408 / 128363870
+  0% [                                                                      ]    409600 / 128363870
+  0% [                                                                      ]    417792 / 128363870
+  0% [                                                                      ]    425984 / 128363870
+  0% [                                                                      ]    434176 / 128363870
+  0% [                                                                      ]    442368 / 128363870
+  0% [                                                                      ]    450560 / 128363870
+  0% [                                                                      ]    458752 / 128363870
+  0% [                                                                      ]    466944 / 128363870
+  0% [                                                                      ]    475136 / 128363870
+  0% [                                                                      ]    483328 / 128363870
+  0% [                                                                      ]    491520 / 128363870
+  0% [                                                                      ]    499712 / 128363870
+  0% [                                                                      ]    507904 / 128363870
+  0% [                                                                      ]    516096 / 128363870
+  0% [                                                                      ]    524288 / 128363870
+  0% [                                                                      ]    532480 / 128363870
+  0% [                                                                      ]    540672 / 128363870
+  0% [                                                                      ]    548864 / 128363870
+  0% [                                                                      ]    557056 / 128363870
+  0% [                                                                      ]    565248 / 128363870
+  0% [                                                                      ]    573440 / 128363870
+  0% [                                                                      ]    581632 / 128363870
+  0% [                                                                      ]    589824 / 128363870
+  0% [                                                                      ]    598016 / 128363870
+  0% [                                                                      ]    606208 / 128363870
+  0% [                                                                      ]    614400 / 128363870
+  0% [                                                                      ]    622592 / 128363870
+  0% [                                                                      ]    630784 / 128363870
+  0% [                                                                      ]    638976 / 128363870
+  0% [                                                                      ]    647168 / 128363870
+  0% [                                                                      ]    655360 / 128363870
+  0% [                                                                      ]    663552 / 128363870
+  0% [                                                                      ]    671744 / 128363870
+  0% [                                                                      ]    679936 / 128363870
+  0% [                                                                      ]    688128 / 128363870
+  0% [                                                                      ]    696320 / 128363870
+  0% [                                                                      ]    704512 / 128363870
+  0% [                                                                      ]    712704 / 128363870
+  0% [                                                                      ]    720896 / 128363870
+  0% [                                                                      ]    729088 / 128363870
+  0% [                                                                      ]    737280 / 128363870
+  0% [                                                                      ]    745472 / 128363870
+  0% [                                                                      ]    753664 / 128363870
+  0% [                                                                      ]    761856 / 128363870
+  0% [                                                                      ]    770048 / 128363870
+  0% [                                                                      ]    778240 / 128363870
+  0% [                                                                      ]    786432 / 128363870
+  0% [                                                                      ]    794624 / 128363870
+  0% [                                                                      ]    802816 / 128363870
+  0% [                                                                      ]    811008 / 128363870
+  0% [                                                                      ]    819200 / 128363870
+  0% [                                                                      ]    827392 / 128363870
+  0% [                                                                      ]    835584 / 128363870
+  0% [                                                                      ]    843776 / 128363870
+  0% [                                                                      ]    851968 / 128363870
+  0% [                                                                      ]    860160 / 128363870
+  0% [                                                                      ]    868352 / 128363870
+  0% [                                                                      ]    876544 / 128363870
+  0% [                                                                      ]    884736 / 128363870
+  0% [                                                                      ]    892928 / 128363870
+  0% [                                                                      ]    901120 / 128363870
+  0% [                                                                      ]    909312 / 128363870
+  0% [                                                                      ]    917504 / 128363870
+  0% [                                                                      ]    925696 / 128363870
+  0% [                                                                      ]    933888 / 128363870
+  0% [                                                                      ]    942080 / 128363870
+  0% [                                                                      ]    950272 / 128363870
+  0% [                                                                      ]    958464 / 128363870
+  0% [                                                                      ]    966656 / 128363870
+  0% [                                                                      ]    974848 / 128363870
+  0% [                                                                      ]    983040 / 128363870
+  0% [                                                                      ]    991232 / 128363870
+  0% [                                                                      ]    999424 / 128363870
+  0% [                                                                      ]   1007616 / 128363870
+  0% [                                                                      ]   1015808 / 128363870
+  0% [                                                                      ]   1024000 / 128363870
+  0% [                                                                      ]   1032192 / 128363870
+  0% [                                                                      ]   1040384 / 128363870
+  0% [                                                                      ]   1048576 / 128363870
+  0% [                                                                      ]   1056768 / 128363870
+  0% [                                                                      ]   1064960 / 128363870
+  0% [                                                                      ]   1073152 / 128363870
+  0% [                                                                      ]   1081344 / 128363870
+  0% [                                                                      ]   1089536 / 128363870
+  0% [                                                                      ]   1097728 / 128363870
+  0% [                                                                      ]   1105920 / 128363870
+  0% [                                                                      ]   1114112 / 128363870
+  0% [                                                                      ]   1122304 / 128363870
+  0% [                                                                      ]   1130496 / 128363870
+  0% [                                                                      ]   1138688 / 128363870
+  0% [                                                                      ]   1146880 / 128363870
+  0% [                                                                      ]   1155072 / 128363870
+  0% [                                                                      ]   1163264 / 128363870
+  0% [                                                                      ]   1171456 / 128363870
+Traceback (most recent call last):
+  File "C:\Users\Sony\Programming\Research\network-auto-configuration\SystemBasedClientSelection\main_fedml_system_selection.py", line 29, in <module>
+    dataset, output_dim = fedml.data.load(args)
+                          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\fedml\data\data_loader.py", line 235, in load
+    return load_synthetic_data(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\fedml\data\data_loader.py", line 263, in load_synthetic_data
+    download_mnist(args.data_cache_dir)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\fedml\data\MNIST\data_loader.py", line 25, in download_mnist
+    wget.download(FEDML_DATA_MNIST_URL, out=file_path)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wget.py", line 526, in download
+    (tmpfile, headers) = ulib.urlretrieve(binurl, tmpfile, callback)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 277, in urlretrieve
+    reporthook(blocknum, bs, size)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wget.py", line 513, in callback_charged
+    callback_progress(blocks, block_size, total_size, bar_function=bar)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wget.py", line 473, in callback_progress
+    sys.stdout.write("\r" + progress)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1634, in _log
+    self.handle(record)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1644, in handle
+    self.callHandlers(record)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1706, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 978, in handle
+    self.emit(record)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\redirect.py", line 643, in write
+    cb(data)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\wandb_run.py", line 1895, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\wandb_run.py", line 1275, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\interface\interface.py", line 621, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 57, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 150, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 84, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 81, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\Sony\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\sock_client.py", line 61, in _sendall_with_error_handle
+    sent = self._sock.send(data[total_sent:])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

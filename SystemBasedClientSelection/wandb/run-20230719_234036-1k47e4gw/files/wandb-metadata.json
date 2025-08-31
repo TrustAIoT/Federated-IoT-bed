@@ -1,0 +1,25 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.0",
+    "heartbeatAt": "2023-07-20T04:40:37.429882",
+    "startedAt": "2023-07-20T04:40:36.575602",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--cf",
+        ".\\config\\simulation\\fedml_config.yaml"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Sony\\Programming\\Research\\network-auto-configuration\\SystemBasedClientSelection\\main_fedml_system_selection.py",
+    "codePath": "SystemBasedClientSelection\\main_fedml_system_selection.py",
+    "git": {
+        "remote": "https://github.com/saintlabresearch/network-auto-configuration.git",
+        "commit": "3818164e7d4ea6a6d9e8d7715f15b4950727fb30"
+    },
+    "email": "iamtenvoltz@gmail.com",
+    "root": "C:/Users/Sony/Programming/Research/network-auto-configuration",
+    "host": "Tenvoltz",
+    "username": "Sony",
+    "executable": "C:\\Users\\Sony\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
+}

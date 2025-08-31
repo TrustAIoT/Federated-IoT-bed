@@ -1,0 +1,51 @@
+
+training_type != FEDML_TRAINING_PLATFORM_CROSS_DEVICE and training_type != FEDML_TRAINING_PLATFORM_CROSS_SILO
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:33:50] [INFO] [__init__.py:103:init] args.rank = 0, args.worker_num = 0
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:33:50] [INFO] [__init__.py:154:update_client_specific_args] data_silo_config is not defined in fedml_config.yaml
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:33:50] [INFO] [__init__.py:121:print_args] ==== args = {'yaml_config_file': '.\\config\\simulation\\fedml_config.yaml', 'run_id': '0', 'rank': 0, 'local_rank': 0, 'node_rank': 0, 'role': 'client', 'yaml_paths': ['.\\config\\simulation\\fedml_config.yaml'], 'training_type': 'simulation', 'random_seed': 0, 'dataset': 'shakespeare', 'data_cache_dir': 'C:\\Users\\Sony/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'model': 'lr', 'federated_optimizer': 'FedAvg', 'client_id_list': None, 'client_num_in_total': 1, 'client_num_per_round': 1, 'comm_round': 3, 'epochs': 1, 'batch_size': 10, 'client_optimizer': 'sgd', 'learning_rate': 0.03, 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 0, 'using_gpu': False, 'gpu_mapping_file': 'config/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'sp', 'is_mobile': 0, 'log_file_dir': 'C:\\Users\\Sony\\fedml-server\\fedml\\logs', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_torch_fedavg_shakespeare_lr', 'using_mlops': False, 'sys_perf_profiling': True, 'config_version': 'release', 'current_running_dir': 'C:\\Users\\Sony\\fedml-client', 'os_name': 'Windows', 'version': 'release', 'device_id': 'A9CF22B4-A038-11E6-88A1-D0577B499363', 'cloud_region': '', 'mqtt_config_path': '', 's3_config_path': '', 'log_server_url': 'https://open.fedml.ai/fedmlLogsServer/logs/update'}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:33:50] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x0000025574443E10>, using_gpu = False, device_id = 0, device_type = cpu
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:33:50] [INFO] [device.py:48:get_device] device = cpu
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:33:50] [INFO] [data_loader.py:21:download_mnist] C:\Users\Sony/fedml_data\MNIST.zip
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:33:50] [INFO] [data_loader.py:6:load_data] load_data. dataset_name = shakespeare
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:39] [INFO] [data_loader.py:123:load_partition_data_mnist] loading data...
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:46] [INFO] [data_loader.py:141:load_partition_data_mnist] finished the loading data
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:40:__init__] model = LogisticRegression(
+  (linear): Linear(in_features=784, out_features=10, bias=True)
+)
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:43:__init__] self.model_trainer = <fedml.ml.trainer.my_model_trainer_classification.ModelTrainerCLS object at 0x00000255763F4390>
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:52:_setup_clients] ############setup_clients (START)#############
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:64:_setup_clients] ############setup_clients (END)#############
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:67:train] self.model_trainer = <fedml.ml.trainer.my_model_trainer_classification.ModelTrainerCLS object at 0x00000255763F4390>
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:74:train] ################Communication round : 0
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:134:_client_sampling] client_indexes = [993]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:85:train] client_indexes = [993]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 993	Epoch: 0	Loss: 2.295648
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:47] [INFO] [fedavg_api.py:178:_local_test_on_all_clients] ################local_test_on_all_clients : 0
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [fedavg_api.py:226:_local_test_on_all_clients] {'training_acc': 0.13327062791904515, 'training_loss': 2.309041173427864}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [fedavg_api.py:235:_local_test_on_all_clients] {'test_acc': 0.13648080314746983, 'test_loss': 2.3082681542545207}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [fedavg_api.py:74:train] ################Communication round : 1
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [fedavg_api.py:134:_client_sampling] client_indexes = [507]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [fedavg_api.py:85:train] client_indexes = [507]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 507	Epoch: 0	Loss: 2.382834
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:50] [INFO] [fedavg_api.py:178:_local_test_on_all_clients] ################local_test_on_all_clients : 1
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [fedavg_api.py:226:_local_test_on_all_clients] {'training_acc': 0.14721717695900363, 'training_loss': 2.296465436349462}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [fedavg_api.py:235:_local_test_on_all_clients] {'test_acc': 0.14936914936914936, 'test_loss': 2.295763383078585}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [fedavg_api.py:74:train] ################Communication round : 2
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [fedavg_api.py:134:_client_sampling] client_indexes = [37]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [fedavg_api.py:85:train] client_indexes = [37]
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [my_model_trainer_classification.py:73:train] Client Index = 37	Epoch: 0	Loss: 2.362297
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = True
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = agg, START = False
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:52] [INFO] [fedavg_api.py:178:_local_test_on_all_clients] ################local_test_on_all_clients : 2
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:54] [INFO] [fedavg_api.py:226:_local_test_on_all_clients] {'training_acc': 0.1675369745718734, 'training_loss': 2.2868556650205636}
+[FedML-Client @device-id-0] [Thu, 20 Jul 2023 03:34:54] [INFO] [fedavg_api.py:235:_local_test_on_all_clients] {'test_acc': 0.1689051689051689, 'test_loss': 2.286184470392506}
