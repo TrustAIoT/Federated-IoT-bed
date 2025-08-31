@@ -1,0 +1,267 @@
+
+------------------server client_id_list = [1, 2, 3]-------------------
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [__init__.py:101:init] args.rank = 0, args.process_id = 0, args.worker_num = 3
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [__init__.py:154:update_client_specific_args] data_silo_config is not defined in fedml_config.yaml
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [__init__.py:121:print_args] ==== args = {'yaml_config_file': 'config/fedml_config.yaml', 'run_id': '123', 'rank': 0, 'local_rank': 0, 'node_rank': 0, 'role': 'server', 'yaml_paths': ['config/fedml_config.yaml'], 'training_type': 'cross_silo', 'scenario': 'horizontal', 'using_mlops': False, 'random_seed': 0, 'bootstrap': 'config/bootstrap.sh', 'dataset': 'cifar10', 'data_cache_dir': '/home/saintlab/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'model': 'resnet56', 'image_size': None, 'input_size': 3, 'class_num': 10, 'model_file_cache_folder': './model_file_cache', 'global_model_file_path': './model_file_cache/global_model.pt', 'federated_optimizer': 'FedAvg', 'client_id_list': '[1, 2, 3]', 'client_num_in_total': 3, 'client_num_per_round': 3, 'comm_round': 2, 'epochs': 5, 'lr': 0.03, 'batch_size': 10, 'client_optimizer': 'sgd', 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 3, 'using_gpu': False, 'gpu_mapping_file': 'config/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'MQTT_S3', 'mqtt_config_path': '', 's3_config_path': '', 'log_file_dir': '/home/saintlab/fedml-server/fedml/logs', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_torch_image_classification', 'n_proc_in_silo': 1, 'proc_rank_in_silo': 0, 'comm': None, 'enable_cuda_rpc': False, 'cpu_transfer': False, 'process_id': 0, 'sys_perf_profiling': True, 'config_version': 'release', 'current_running_dir': '/home/saintlab/fedml-client', 'os_name': 'Linux', 'version': 'release', 'device_id': 'bf33afe3-a22c-409a-99e9-3105ddb73494-docker', 'cloud_region': '', 'log_server_url': 'https://open.fedml.ai/fedmlLogsServer/logs/update'}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [device.py:113:get_device] devide_type = cpu, gpu_mapping_file = None, gpu_mapping_key = None, gpu_id = None
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x7fb4952c70>, using_gpu = False, device_id = None, device_type = cpu
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [gpu_mapping_cross_silo.py:16:mapping_processes_to_gpu_device_from_yaml_file_cross_silo] Training on device: cpu
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [device.py:131:get_device] device = cpu
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [efficient_loader.py:117:partition_data] *********partition data***************
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [without_reload.py:31:__build_truncated_dataset__] download = True
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [without_reload.py:31:__build_truncated_dataset__]
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [utils.py:143:download_url] Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to /home/saintlab/fedml_data/cifar-10-python.tar.gz
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:54:30] [INFO] [utils.py:143:download_url]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 170498071/170498071 [04:30<00:00, 629181.87it/s]
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:02] [INFO] [utils.py:437:download_and_extract_archive] Extracting /home/saintlab/fedml_data/cifar-10-python.tar.gz to /home/saintlab/fedml_data
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:02] [INFO] [utils.py:437:download_and_extract_archive]
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:07] [INFO] [without_reload.py:31:__build_truncated_dataset__] download = True
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:07] [INFO] [without_reload.py:31:__build_truncated_dataset__]
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:08] [INFO] [cifar.py:137:download] Files already downloaded and verified
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:08] [INFO] [cifar.py:137:download]
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:132:partition_data] N = 50000
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:332:efficient_load_partition_data_cifar10] traindata_cls_counts = {0: {0: 2182, 1: 3398, 2: 1169, 3: 4808, 4: 568, 5: 3220, 6: 4587}, 1: {0: 1760, 1: 1132, 2: 3230, 3: 121, 4: 2527, 5: 89, 6: 2, 7: 10, 8: 4986, 9: 1276}, 2: {0: 1058, 1: 470, 2: 601, 3: 71, 4: 1905, 5: 1691, 6: 411, 7: 4990, 8: 14, 9: 3724}}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:344:efficient_load_partition_data_cifar10] train_dl_global number = 5000
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:345:efficient_load_partition_data_cifar10] test_dl_global number = 1000
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:357:efficient_load_partition_data_cifar10] client_idx = 0, local_sample_number = 19932
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:370:efficient_load_partition_data_cifar10] client_idx = 0, batch_num_train_local = 1993, batch_num_test_local = 1000
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:357:efficient_load_partition_data_cifar10] client_idx = 1, local_sample_number = 15133
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:370:efficient_load_partition_data_cifar10] client_idx = 1, batch_num_train_local = 1513, batch_num_test_local = 1000
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:09] [INFO] [efficient_loader.py:357:efficient_load_partition_data_cifar10] client_idx = 2, local_sample_number = 14935
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [efficient_loader.py:370:efficient_load_partition_data_cifar10] client_idx = 2, batch_num_train_local = 1493, batch_num_test_local = 1000
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [model_hub.py:22:create] create_model. model_name = resnet56, output_dim = 10
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [contribution_assessor_manager.py:16:_build_assessor] contribution_alg is not set, assessor is None
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [fedml_aggregator.py:44:__init__] self.device = cpu
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:42:__init__] {'yaml_config_file': 'config/fedml_config.yaml', 'run_id': '123', 'rank': 0, 'local_rank': 0, 'node_rank': 0, 'role': 'server', 'yaml_paths': ['config/fedml_config.yaml'], 'training_type': 'cross_silo', 'scenario': 'horizontal', 'using_mlops': False, 'random_seed': 0, 'bootstrap': 'config/bootstrap.sh', 'dataset': 'cifar10', 'data_cache_dir': '/home/saintlab/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'model': 'resnet56', 'image_size': None, 'input_size': 3, 'class_num': 10, 'model_file_cache_folder': './model_file_cache', 'global_model_file_path': './model_file_cache/global_model.pt', 'federated_optimizer': 'FedAvg', 'client_id_list': '[1, 2, 3]', 'client_num_in_total': 3, 'client_num_per_round': 3, 'comm_round': 2, 'epochs': 5, 'lr': 0.03, 'batch_size': 10, 'client_optimizer': 'sgd', 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 3, 'using_gpu': False, 'gpu_mapping_file': 'config/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'MQTT_S3', 'mqtt_config_path': {'mqttWssHost': 'wss://open.fedml.ai/mqtt', 'BROKER_HOST': 'mqtt.fedml.ai', 'MQTT_PWD': 'G32BnPj59hk3MHj85rTC', 'BROKER_PORT': 1883, 'MQTT_KEEPALIVE': 180, 'MQTT_USER': 'admin'}, 's3_config_path': {'CN_S3_SAK': 'fpU7ED2Xht1UGYAQrX9j/UPwAlXhn0cAcJZXnNi+', 'CN_REGION_NAME': 'us-west-1', 'CN_S3_AKI': 'AKIAUAWARWF4SW36VYXP', 'BUCKET_NAME': 'fedml'}, 'log_file_dir': '/home/saintlab/fedml-server/fedml/logs', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_torch_image_classification', 'n_proc_in_silo': 1, 'proc_rank_in_silo': 0, 'comm': None, 'enable_cuda_rpc': False, 'cpu_transfer': False, 'process_id': 0, 'sys_perf_profiling': True, 'config_version': 'release', 'current_running_dir': '/home/saintlab/fedml-client', 'os_name': 'Linux', 'version': 'release', 'device_id': 'bf33afe3-a22c-409a-99e9-3105ddb73494-docker', 'cloud_region': '', 'log_server_url': 'https://open.fedml.ai/fedmlLogsServer/logs/update', 'device': device(type='cpu')}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:44:__init__] is browser device: False
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:45:__init__] origin client object [1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:46:__init__] client object [1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:53:__init__] MqttS3CommManager args client_id_list: [1, 2, 3]
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:87:__init__] mqtt_s3.init: client_num = 3
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [fedml_server_manager.py:75:register_message_receive_handlers] register_message_receive_handlers------
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [fedml_comm_manager.py:27:run] running
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [fedml_aggregator.py:125:data_silo_selection] client_num_in_total = 3, client_num_per_round = 3
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:259:send_message] mqtt_s3.send_message: msg topic = fedml_123_0_1
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_0_1), message ({"msg_type": 6, "sender": 0, "receiver": 1, "client_idx": "0"})
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [fedml_server_manager.py:106:handle_message_connection_ready] Connection ready for client1
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:259:send_message] mqtt_s3.send_message: msg topic = fedml_123_0_2
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_0_2), message ({"msg_type": 6, "sender": 0, "receiver": 2, "client_idx": "1"})
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [fedml_server_manager.py:106:handle_message_connection_ready] Connection ready for client2
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_s3_multi_clients_comm_manager.py:259:send_message] mqtt_s3.send_message: msg topic = fedml_123_0_3
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_0_3), message ({"msg_type": 6, "sender": 0, "receiver": 3, "client_idx": "2"})
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 15:59:10] [INFO] [fedml_server_manager.py:106:handle_message_connection_ready] Connection ready for client3
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:07:07] [INFO] [mqtt_s3_multi_clients_comm_manager.py:195:_on_message_impl] mqtt_s3 receive msg {'msg_type': 5, 'sender': 1, 'receiver': 0, 'client_status': 'ONLINE', 'client_os': 'Linux'}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:07:07] [INFO] [mqtt_s3_multi_clients_comm_manager.py:203:_on_message_impl] mqtt_s3 receive msg deviceType
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:07:07] [INFO] [mqtt_s3_multi_clients_comm_manager.py:237:_on_message_impl] mqtt_s3.on_message: not use s3 pack
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:07:07] [INFO] [mqtt_s3_multi_clients_comm_manager.py:188:_notify] mqtt_s3.notify: msg type = 5
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:07:07] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 5, sender_id = 1, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:07:07] [INFO] [fedml_server_manager.py:155:handle_message_client_status_update] received client status ONLINE
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:07:07] [INFO] [fedml_server_manager.py:114:process_online_status] self.client_online_mapping = {'1': True}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:07:07] [INFO] [fedml_server_manager.py:122:process_online_status] sender_id = 1, all_client_is_online = False
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:17:47] [INFO] [mqtt_s3_multi_clients_comm_manager.py:195:_on_message_impl] mqtt_s3 receive msg {'msg_type': 5, 'sender': 2, 'receiver': 0, 'client_status': 'ONLINE', 'client_os': 'Linux'}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:17:47] [INFO] [mqtt_s3_multi_clients_comm_manager.py:203:_on_message_impl] mqtt_s3 receive msg deviceType
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:17:47] [INFO] [mqtt_s3_multi_clients_comm_manager.py:237:_on_message_impl] mqtt_s3.on_message: not use s3 pack
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:17:47] [INFO] [mqtt_s3_multi_clients_comm_manager.py:188:_notify] mqtt_s3.notify: msg type = 5
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:17:47] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 5, sender_id = 2, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:17:47] [INFO] [fedml_server_manager.py:155:handle_message_client_status_update] received client status ONLINE
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:17:47] [INFO] [fedml_server_manager.py:114:process_online_status] self.client_online_mapping = {'1': True, '2': True}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:17:47] [INFO] [fedml_server_manager.py:122:process_online_status] sender_id = 2, all_client_is_online = False
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [mqtt_s3_multi_clients_comm_manager.py:195:_on_message_impl] mqtt_s3 receive msg {'msg_type': 5, 'sender': 3, 'receiver': 0, 'client_status': 'ONLINE', 'client_os': 'Linux'}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [mqtt_s3_multi_clients_comm_manager.py:203:_on_message_impl] mqtt_s3 receive msg deviceType
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [mqtt_s3_multi_clients_comm_manager.py:237:_on_message_impl] mqtt_s3.on_message: not use s3 pack
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [mqtt_s3_multi_clients_comm_manager.py:188:_notify] mqtt_s3.notify: msg type = 5
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 5, sender_id = 3, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [fedml_server_manager.py:155:handle_message_client_status_update] received client status ONLINE
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [fedml_server_manager.py:114:process_online_status] self.client_online_mapping = {'1': True, '2': True, '3': True}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [fedml_server_manager.py:122:process_online_status] sender_id = 3, all_client_is_online = True
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:31] [INFO] [mqtt_s3_multi_clients_comm_manager.py:259:send_message] mqtt_s3.send_message: msg topic = fedml_123_0_1
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:32] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 256.00 KB, progress 10%
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:32] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 512.00 KB, progress 20%
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 2453.48 KB, progress 100%
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_s3_multi_clients_comm_manager.py:274:send_message] mqtt_s3.send_message: S3+MQTT msg sent, s3 message key = fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_s3_multi_clients_comm_manager.py:278:send_message] mqtt_s3.send_message: to python client.
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_0_1), message ({"msg_type": 1, "sender": 0, "receiver": 1, "model_params": "fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428", "client_idx": "0", "client_os": "PythonClient", "model_params_url": "https://fedml.s3.amazonaws.com/fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=OoKFu%2BvmkrChdx6NcPazhtfoL5w%3D&Expires=1690561235", "model_params_key": "fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428"})
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_s3_multi_clients_comm_manager.py:259:send_message] mqtt_s3.send_message: msg topic = fedml_123_0_2
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_s3_multi_clients_comm_manager.py:274:send_message] mqtt_s3.send_message: S3+MQTT msg sent, s3 message key = fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_s3_multi_clients_comm_manager.py:278:send_message] mqtt_s3.send_message: to python client.
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_0_2), message ({"msg_type": 1, "sender": 0, "receiver": 2, "model_params_url": "https://fedml.s3.amazonaws.com/fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=OoKFu%2BvmkrChdx6NcPazhtfoL5w%3D&Expires=1690561235", "model_params_key": "fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428", "model_params": "fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428", "client_idx": "1", "client_os": "PythonClient"})
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_s3_multi_clients_comm_manager.py:259:send_message] mqtt_s3.send_message: msg topic = fedml_123_0_3
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_s3_multi_clients_comm_manager.py:274:send_message] mqtt_s3.send_message: S3+MQTT msg sent, s3 message key = fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_s3_multi_clients_comm_manager.py:278:send_message] mqtt_s3.send_message: to python client.
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_0_3), message ({"msg_type": 1, "sender": 0, "receiver": 3, "model_params_url": "https://fedml.s3.amazonaws.com/fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=OoKFu%2BvmkrChdx6NcPazhtfoL5w%3D&Expires=1690561235", "model_params_key": "fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428", "model_params": "fedml_123_0_1_3c1cb157-f4b7-4b0d-acfa-7adfc0c2e428", "client_idx": "2", "client_os": "PythonClient"})
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:20:36] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = server.wait, START = True
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:43] [INFO] [mqtt_s3_multi_clients_comm_manager.py:195:_on_message_impl] mqtt_s3 receive msg {'msg_type': 3, 'sender': 2, 'receiver': 0, 'model_params': 'fedml_123_2_162b2403-8e9c-401c-a5e2-257225e09011', 'num_samples': 15133, 'model_params_url': 'https://fedml.s3.amazonaws.com/fedml_123_2_162b2403-8e9c-401c-a5e2-257225e09011?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=tKZbCydr%2Fjm8H%2FhVEHTV9Akqqo0%3D&Expires=1690561781'}
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:43] [INFO] [mqtt_s3_multi_clients_comm_manager.py:203:_on_message_impl] mqtt_s3 receive msg deviceType
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:43] [INFO] [mqtt_s3_multi_clients_comm_manager.py:208:_on_message_impl] mqtt_s3.on_message: use s3 pack, s3 message key fedml_123_2_162b2403-8e9c-401c-a5e2-257225e09011
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:43] [INFO] [remote_storage.py:213:read_model] temp_file_path = /home/saintlab/fedml_cache/1685@36972840-7225-4d84-9751-ef5194ae8cf5/fedml_123_2_162b2403-8e9c-401c-a5e2-257225e09011
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:44] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 256.00 KB, progress 10%
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:44] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 512.00 KB, progress 20%
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:47] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 2453.78 KB, progress 100%
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:48] [INFO] [mqtt_s3_multi_clients_comm_manager.py:226:_on_message_impl] mqtt_s3.on_message: model params length 350
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:48] [INFO] [mqtt_s3_multi_clients_comm_manager.py:231:_on_message_impl] mqtt_s3.on_message: model url https://fedml.s3.amazonaws.com/fedml_123_2_162b2403-8e9c-401c-a5e2-257225e09011?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=tKZbCydr%2Fjm8H%2FhVEHTV9Akqqo0%3D&Expires=1690561781
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:48] [INFO] [mqtt_s3_multi_clients_comm_manager.py:188:_notify] mqtt_s3.notify: msg type = 3
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:48] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 3, sender_id = 2, receiver_id = 0
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:48] [INFO] [__init__.py:16:event] FedMLDebug edge_id = 2, event_name = comm_c2s, START = False
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:48] [INFO] [fedml_aggregator.py:58:add_local_trained_result] add_model. index = 1
+[FedML-Server @device-id-0] [Sun, 23 Jul 2023 16:29:48] [INFO] [fedml_server_manager.py:172:handle_message_receive_model_from_client] b_all_received = False
+Traceback (most recent call last):
+  File "/home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML/python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/torch_server.py", line 23, in <module>
+    fedml_runner = FedMLRunner(args, device, dataset, model, trainer, aggregator)
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/runner.py", line 51, in __init__
+    self.runner = init_runner_func(
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/runner.py", line 131, in _init_cross_silo_runner
+    runner = Server(
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/cross_silo/fedml_server.py", line 19, in __init__
+    server_initializer.init_server(
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/cross_silo/server/server_initializer.py", line 42, in init_server
+    server_manager.run()
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/cross_silo/server/fedml_server_manager.py", line 41, in run
+    super().run()
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/core/distributed/fedml_comm_manager.py", line 28, in run
+    self.com_manager.handle_receive_message()
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/core/distributed/communication/mqtt_s3/mqtt_s3_multi_clients_comm_manager.py", line 327, in handle_receive_message
+    self.run_loop_forever()
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/core/distributed/communication/mqtt_s3/mqtt_s3_multi_clients_comm_manager.py", line 124, in run_loop_forever
+    self.mqtt_mgr.loop_forever()
+  File "/home/saintlab/.local/lib/python3.9/site-packages/fedml/core/distributed/communication/mqtt/mqtt_manager.py", line 90, in loop_forever
+    self._client.loop_forever(retry_first_connection=True)
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt

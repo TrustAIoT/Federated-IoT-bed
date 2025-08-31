@@ -1,0 +1,31 @@
+{
+    "os": "Linux-6.1.21-v8+-aarch64-with-glibc2.31",
+    "python": "3.9.2",
+    "heartbeatAt": "2023-07-23T15:54:29.304167",
+    "startedAt": "2023-07-23T15:54:27.936228",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--cf",
+        "config/fedml_config.yaml",
+        "--rank",
+        "0",
+        "--role",
+        "server",
+        "--run_id",
+        "123"
+    ],
+    "state": "running",
+    "program": "/home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML/python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/torch_server.py",
+    "codePath": "python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/torch_server.py",
+    "git": {
+        "remote": "https://github.com/FedML-AI/FedML.git",
+        "commit": "3825d6ee04ec905efc9fea26cdcb6a4d287dfe99"
+    },
+    "email": "saintlabresearch@gmail.com",
+    "root": "/home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML",
+    "host": "raspberrypi",
+    "username": "saintlab",
+    "executable": "/usr/bin/python3"
+}

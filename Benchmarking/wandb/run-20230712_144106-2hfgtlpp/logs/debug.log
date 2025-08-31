@@ -1,0 +1,25 @@
+2023-07-12 14:41:06,948 INFO    MainThread:1978 [wandb_setup.py:_flush():76] Configure stats pid to 1978
+2023-07-12 14:41:06,948 INFO    MainThread:1978 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-07-12 14:41:06,948 INFO    MainThread:1978 [wandb_setup.py:_flush():76] Loading settings from /home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML/python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/wandb/settings
+2023-07-12 14:41:06,948 INFO    MainThread:1978 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2023-07-12 14:41:06,948 INFO    MainThread:1978 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/torch_client.py', 'program': '/home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML/python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/torch_client.py'}
+2023-07-12 14:41:06,949 INFO    MainThread:1978 [wandb_init.py:_log_setup():461] Logging user logs to /home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML/python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/wandb/run-20230712_144106-2hfgtlpp/logs/debug.log
+2023-07-12 14:41:06,949 INFO    MainThread:1978 [wandb_init.py:_log_setup():462] Logging internal logs to /home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML/python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/wandb/run-20230712_144106-2hfgtlpp/logs/debug-internal.log
+2023-07-12 14:41:06,949 INFO    MainThread:1978 [wandb_init.py:init():495] calling init triggers
+2023-07-12 14:41:06,950 INFO    MainThread:1978 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {'yaml_config_file': 'config/fedml_config.yaml', 'run_id': '123', 'rank': 2, 'local_rank': 0, 'node_rank': 0, 'role': 'client', 'yaml_paths': ['config/fedml_config.yaml'], 'training_type': 'cross_silo', 'scenario': 'horizontal', 'using_mlops': False, 'random_seed': 0, 'bootstrap': 'config/bootstrap.sh', 'dataset': 'cifar10', 'data_cache_dir': '/root/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'model': 'mobilenet_v3', 'image_size': None, 'input_size': 3, 'class_num': 10, 'model_file_cache_folder': './model_file_cache', 'global_model_file_path': './model_file_cache/global_model.pt', 'federated_optimizer': 'FedAvg', 'client_id_list': None, 'client_num_in_total': 2, 'client_num_per_round': 2, 'comm_round': 5, 'epochs': 1, 'lr': 0.03, 'batch_size': 10, 'client_optimizer': 'sgd', 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 2, 'using_gpu': False, 'gpu_mapping_file': 'config/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'MQTT_S3', 'mqtt_config_path': 'config/mqtt_config.yaml', 's3_config_path': 'config/s3_config.yaml', 'log_file_dir': './log', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_torch_image_classification', 'n_proc_in_silo': 1, 'proc_rank_in_silo': 0, 'comm': None, 'enable_cuda_rpc': False, 'cpu_transfer': False, 'process_id': 2, 'sys_perf_profiling': True}
+2023-07-12 14:41:06,950 INFO    MainThread:1978 [wandb_init.py:init():548] starting backend
+2023-07-12 14:41:06,950 INFO    MainThread:1978 [wandb_init.py:init():552] setting up manager
+2023-07-12 14:41:06,957 INFO    MainThread:1978 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-12 14:41:06,963 INFO    MainThread:1978 [wandb_init.py:init():558] backend started and connected
+2023-07-12 14:41:06,992 INFO    MainThread:1978 [wandb_init.py:init():636] updated telemetry
+2023-07-12 14:41:07,033 INFO    MainThread:1978 [wandb_init.py:init():667] communicating run to backend with 30 second timeout
+2023-07-12 14:41:07,618 INFO    MainThread:1978 [wandb_run.py:_on_init():1982] communicating current version
+2023-07-12 14:41:08,204 INFO    MainThread:1978 [wandb_run.py:_on_init():1986] got version response upgrade_message: "wandb version 0.15.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-07-12 14:41:08,204 INFO    MainThread:1978 [wandb_init.py:init():700] starting run threads in backend
+2023-07-12 14:41:08,751 INFO    MainThread:1978 [wandb_run.py:_console_start():1962] atexit reg
+2023-07-12 14:41:08,753 INFO    MainThread:1978 [wandb_run.py:_redirect():1820] redirect: SettingsConsole.WRAP_RAW
+2023-07-12 14:41:08,753 INFO    MainThread:1978 [wandb_run.py:_redirect():1885] Wrapping output streams.
+2023-07-12 14:41:08,753 INFO    MainThread:1978 [wandb_run.py:_redirect():1907] Redirects installed.
+2023-07-12 14:41:08,755 INFO    MainThread:1978 [wandb_init.py:init():732] run started, returning control to user process

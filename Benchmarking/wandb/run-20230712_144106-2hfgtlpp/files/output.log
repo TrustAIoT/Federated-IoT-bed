@@ -1,0 +1,279 @@
+
+------------------client client_id_list = [2]-------------------
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [__init__.py:101:init] args.rank = 2, args.process_id = 2, args.worker_num = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [__init__.py:154:update_client_specific_args] data_silo_config is not defined in fedml_config.yaml
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [__init__.py:121:print_args] ==== args = {'yaml_config_file': 'config/fedml_config.yaml', 'run_id': '123', 'rank': 2, 'local_rank': 0, 'node_rank': 0, 'role': 'client', 'yaml_paths': ['config/fedml_config.yaml'], 'training_type': 'cross_silo', 'scenario': 'horizontal', 'using_mlops': False, 'random_seed': 0, 'bootstrap': 'config/bootstrap.sh', 'dataset': 'cifar10', 'data_cache_dir': '/root/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'model': 'mobilenet_v3', 'image_size': None, 'input_size': 3, 'class_num': 10, 'model_file_cache_folder': './model_file_cache', 'global_model_file_path': './model_file_cache/global_model.pt', 'federated_optimizer': 'FedAvg', 'client_id_list': '[2]', 'client_num_in_total': 2, 'client_num_per_round': 2, 'comm_round': 5, 'epochs': 1, 'lr': 0.03, 'batch_size': 10, 'client_optimizer': 'sgd', 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 2, 'using_gpu': False, 'gpu_mapping_file': 'config/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'MQTT_S3', 'mqtt_config_path': '', 's3_config_path': '', 'log_file_dir': '/root/fedml-client/fedml/logs', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_torch_image_classification', 'n_proc_in_silo': 1, 'proc_rank_in_silo': 0, 'comm': None, 'enable_cuda_rpc': False, 'cpu_transfer': False, 'process_id': 2, 'sys_perf_profiling': True, 'config_version': 'release', 'current_running_dir': '/root/fedml-client', 'os_name': 'Linux', 'version': 'release', 'device_id': '7f720a61-e7e3-4195-92e4-d717fe8865ce-docker', 'cloud_region': '', 'log_server_url': 'https://open.fedml.ai/fedmlLogsServer/logs/update'}
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [device.py:113:get_device] devide_type = cpu, gpu_mapping_file = None, gpu_mapping_key = None, gpu_id = None
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [ml_engine_adapter.py:147:get_torch_device] args = <fedml.arguments.Arguments object at 0x7fac572fd0>, using_gpu = False, device_id = None, device_type = cpu
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [gpu_mapping_cross_silo.py:16:mapping_processes_to_gpu_device_from_yaml_file_cross_silo] Training on device: cpu
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [device.py:131:get_device] device = cpu
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [efficient_loader.py:117:partition_data] *********partition data***************
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [without_reload.py:31:__build_truncated_dataset__] download = True
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:09] [INFO] [without_reload.py:31:__build_truncated_dataset__]
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:10] [INFO] [cifar.py:137:download] Files already downloaded and verified
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:10] [INFO] [cifar.py:137:download]
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:11] [INFO] [without_reload.py:31:__build_truncated_dataset__] download = True
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:11] [INFO] [without_reload.py:31:__build_truncated_dataset__]
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:12] [INFO] [cifar.py:137:download] Files already downloaded and verified
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:12] [INFO] [cifar.py:137:download]
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [efficient_loader.py:132:partition_data] N = 50000
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [efficient_loader.py:332:efficient_load_partition_data_cifar10] traindata_cls_counts = {0: {0: 2767, 1: 2899, 2: 56, 3: 2155, 4: 4790, 5: 586, 6: 4, 7: 42, 8: 5000, 9: 5000}, 1: {0: 2233, 1: 2101, 2: 4944, 3: 2845, 4: 210, 5: 4414, 6: 4996, 7: 4958}}
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [efficient_loader.py:344:efficient_load_partition_data_cifar10] train_dl_global number = 5000
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [efficient_loader.py:345:efficient_load_partition_data_cifar10] test_dl_global number = 1000
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [efficient_loader.py:357:efficient_load_partition_data_cifar10] client_idx = 0, local_sample_number = 23299
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [efficient_loader.py:370:efficient_load_partition_data_cifar10] client_idx = 0, batch_num_train_local = 2329, batch_num_test_local = 1000
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [efficient_loader.py:357:efficient_load_partition_data_cifar10] client_idx = 1, local_sample_number = 26701
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [efficient_loader.py:370:efficient_load_partition_data_cifar10] client_idx = 1, batch_num_train_local = 2670, batch_num_test_local = 1000
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [model_hub.py:22:create] create_model. model_name = mobilenet_v3, output_dim = 10
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [contribution_assessor_manager.py:16:_build_assessor] contribution_alg is not set, assessor is None
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:13] [INFO] [fedml_trainer_dist_adapter.py:37:__init__] Initiating Trainer
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [mqtt_s3_multi_clients_comm_manager.py:42:__init__] {'yaml_config_file': 'config/fedml_config.yaml', 'run_id': '123', 'rank': 2, 'local_rank': 0, 'node_rank': 0, 'role': 'client', 'yaml_paths': ['config/fedml_config.yaml'], 'training_type': 'cross_silo', 'scenario': 'horizontal', 'using_mlops': False, 'random_seed': 0, 'bootstrap': 'config/bootstrap.sh', 'dataset': 'cifar10', 'data_cache_dir': '/root/fedml_data', 'partition_method': 'hetero', 'partition_alpha': 0.5, 'model': 'mobilenet_v3', 'image_size': None, 'input_size': 3, 'class_num': 10, 'model_file_cache_folder': './model_file_cache', 'global_model_file_path': './model_file_cache/global_model.pt', 'federated_optimizer': 'FedAvg', 'client_id_list': '[2]', 'client_num_in_total': 2, 'client_num_per_round': 2, 'comm_round': 5, 'epochs': 1, 'lr': 0.03, 'batch_size': 10, 'client_optimizer': 'sgd', 'weight_decay': 0.001, 'frequency_of_the_test': 1, 'worker_num': 2, 'using_gpu': False, 'gpu_mapping_file': 'config/gpu_mapping.yaml', 'gpu_mapping_key': 'mapping_default', 'backend': 'MQTT_S3', 'mqtt_config_path': {'mqttWssHost': 'wss://open.fedml.ai/mqtt', 'BROKER_HOST': 'mqtt.fedml.ai', 'MQTT_PWD': 'G32BnPj59hk3MHj85rTC', 'BROKER_PORT': 1883, 'MQTT_KEEPALIVE': 180, 'MQTT_USER': 'admin'}, 's3_config_path': {'CN_S3_SAK': 'fpU7ED2Xht1UGYAQrX9j/UPwAlXhn0cAcJZXnNi+', 'CN_REGION_NAME': 'us-west-1', 'CN_S3_AKI': 'AKIAUAWARWF4SW36VYXP', 'BUCKET_NAME': 'fedml'}, 'log_file_dir': '/root/fedml-client/fedml/logs', 'enable_wandb': True, 'wandb_key': '7a0c8bb3ad2fcce7be9aac88060c2e71d3ff96cc', 'wandb_project': 'fedml', 'wandb_name': 'fedml_torch_image_classification', 'n_proc_in_silo': 1, 'proc_rank_in_silo': 0, 'comm': None, 'enable_cuda_rpc': False, 'cpu_transfer': False, 'process_id': 2, 'sys_perf_profiling': True, 'config_version': 'release', 'current_running_dir': '/root/fedml-client', 'os_name': 'Linux', 'version': 'release', 'device_id': '7f720a61-e7e3-4195-92e4-d717fe8865ce-docker', 'cloud_region': '', 'log_server_url': 'https://open.fedml.ai/fedmlLogsServer/logs/update', 'device': device(type='cpu')}
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [mqtt_s3_multi_clients_comm_manager.py:44:__init__] is browser device: False
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [mqtt_s3_multi_clients_comm_manager.py:45:__init__] origin client object [2]
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [mqtt_s3_multi_clients_comm_manager.py:46:__init__] client object [2]
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [mqtt_s3_multi_clients_comm_manager.py:53:__init__] MqttS3CommManager args client_id_list: [2]
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [mqtt_s3_multi_clients_comm_manager.py:87:__init__] mqtt_s3.init: client_num = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [fedml_client_master_manager.py:30:__init__] self.client_real_ids = [2]
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [fedml_comm_manager.py:27:run] running
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [fedml_client_master_manager.py:143:send_client_status] send_client_status
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [fedml_client_master_manager.py:144:send_client_status] self.client_real_id = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [mqtt_s3_multi_clients_comm_manager.py:316:send_message] mqtt_s3.send_message: MQTT msg sent
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:14] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_2), message ({"msg_type": 5, "sender": 2, "receiver": 0, "client_status": "ONLINE", "client_os": "Linux"})
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:20] [INFO] [mqtt_s3_multi_clients_comm_manager.py:195:_on_message_impl] mqtt_s3 receive msg {'msg_type': 1, 'sender': 0, 'receiver': 2, 'model_params_url': 'https://fedml.s3.amazonaws.com/fedml_123_0_1_4d4dff84-e90f-4a7f-be65-b289c6770bb6?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=Sk4D30P8EhAwFZ71h8s8OXA4WhM%3D&Expires=1689622879', 'model_params_key': 'fedml_123_0_1_4d4dff84-e90f-4a7f-be65-b289c6770bb6', 'model_params': 'fedml_123_0_1_4d4dff84-e90f-4a7f-be65-b289c6770bb6', 'client_idx': '1', 'client_os': 'PythonClient'}
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:20] [INFO] [mqtt_s3_multi_clients_comm_manager.py:203:_on_message_impl] mqtt_s3 receive msg deviceType
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:20] [INFO] [mqtt_s3_multi_clients_comm_manager.py:208:_on_message_impl] mqtt_s3.on_message: use s3 pack, s3 message key fedml_123_0_1_4d4dff84-e90f-4a7f-be65-b289c6770bb6
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:21] [INFO] [remote_storage.py:213:read_model] temp_file_path = /root/fedml_cache/1978@ada5bc31-90d4-43c8-b7c7-4a30eb3942e7/fedml_123_0_1_4d4dff84-e90f-4a7f-be65-b289c6770bb6
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:23] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 1024.00 KB, progress 5%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:24] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 2048.00 KB, progress 10%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:26] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 3072.00 KB, progress 15%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:27] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 4096.00 KB, progress 20%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:29] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 5120.00 KB, progress 25%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:31] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 6144.00 KB, progress 30%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:33] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 7168.00 KB, progress 35%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:34] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 8300.01 KB, progress 40%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:39] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 9324.01 KB, progress 45%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:41] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 10348.01 KB, progress 50%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:42] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 11372.01 KB, progress 55%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:41:44] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 12396.01 KB, progress 60%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:01] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 20332.01 KB, progress 100%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:02] [INFO] [mqtt_s3_multi_clients_comm_manager.py:226:_on_message_impl] mqtt_s3.on_message: model params length 350
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:02] [INFO] [mqtt_s3_multi_clients_comm_manager.py:231:_on_message_impl] mqtt_s3.on_message: model url https://fedml.s3.amazonaws.com/fedml_123_0_1_4d4dff84-e90f-4a7f-be65-b289c6770bb6?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=Sk4D30P8EhAwFZ71h8s8OXA4WhM%3D&Expires=1689622879
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:02] [INFO] [mqtt_s3_multi_clients_comm_manager.py:188:_notify] mqtt_s3.notify: msg type = 1
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:02] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 1, sender_id = 0, receiver_id = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:02] [INFO] [fedml_client_master_manager.py:79:handle_message_init] data_silo_index = 1
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:02] [INFO] [fedml_client_master_manager.py:172:__train] #######training########### round_id = 0
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:02] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:42:03] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 0/2670 | Loss: 7.050962924957275
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:43:11] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 100/2670 | Loss: 2.397254705429077
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:44:18] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 200/2670 | Loss: 1.8674685955047607
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:45:26] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 300/2670 | Loss: 2.113340139389038
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:46:34] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 400/2670 | Loss: 2.0517992973327637
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:47:42] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 500/2670 | Loss: 1.5729286670684814
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:48:50] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 600/2670 | Loss: 1.6537240743637085
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:49:58] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 700/2670 | Loss: 1.8990395069122314
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:51:06] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 800/2670 | Loss: 1.474622368812561
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:52:14] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 900/2670 | Loss: 1.725135087966919
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:53:22] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1000/2670 | Loss: 1.5555429458618164
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:54:30] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1100/2670 | Loss: 1.8984134197235107
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:55:39] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1200/2670 | Loss: 1.9001197814941406
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:56:47] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1300/2670 | Loss: 1.6958138942718506
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:57:55] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1400/2670 | Loss: 1.8877493143081665
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 19:59:03] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1500/2670 | Loss: 1.9031503200531006
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:00:11] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1600/2670 | Loss: 1.7731174230575562
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:01:19] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1700/2670 | Loss: 1.9180362224578857
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:02:27] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1800/2670 | Loss: 1.6533664464950562
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:03:35] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1900/2670 | Loss: 1.5025235414505005
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:04:43] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2000/2670 | Loss: 1.871230125427246
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:05:51] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2100/2670 | Loss: 1.379737138748169
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:07:00] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2200/2670 | Loss: 1.3696625232696533
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:08:08] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2300/2670 | Loss: 1.5147590637207031
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:09:16] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2400/2670 | Loss: 1.6710922718048096
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:10:24] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2500/2670 | Loss: 1.4133870601654053
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:11:32] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2600/2670 | Loss: 1.0084079504013062
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:19] [INFO] [classification_trainer.py:58:train] (Trainer_ID 1. Local Training Epoch: 0 	Loss: 1.850514
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:19] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:19] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = comm_c2s, START = True
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:19] [INFO] [mqtt_s3_multi_clients_comm_manager.py:296:send_message] mqtt_s3.send_message: S3+MQTT msg sent, message_key = fedml_123_2_69cdfbb2-76c8-4f9f-ae87-19ec16642910
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:21] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 1024.00 KB, progress 5%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:21] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 2048.00 KB, progress 10%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:21] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 3072.00 KB, progress 15%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:22] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 4096.00 KB, progress 20%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:22] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 5120.00 KB, progress 25%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:22] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 6144.00 KB, progress 30%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:23] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 7168.00 KB, progress 35%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:23] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 8192.00 KB, progress 40%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:23] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 9216.00 KB, progress 45%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:23] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 10240.00 KB, progress 50%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:24] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 11264.00 KB, progress 55%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:24] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 12288.00 KB, progress 60%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:26] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 20332.01 KB, progress 100%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:27] [INFO] [mqtt_s3_multi_clients_comm_manager.py:310:send_message] mqtt_s3.send_message: client s3, topic = fedml_123_2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:27] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_2), message ({"msg_type": 3, "sender": 2, "receiver": 0, "model_params": "fedml_123_2_69cdfbb2-76c8-4f9f-ae87-19ec16642910", "num_samples": 26701, "model_params_url": "https://fedml.s3.amazonaws.com/fedml_123_2_69cdfbb2-76c8-4f9f-ae87-19ec16642910?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=%2B28Zlyrj3GPZaDX6SXstlpmlacU%3D&Expires=1689624747"})
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:28] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:44] [INFO] [mqtt_s3_multi_clients_comm_manager.py:195:_on_message_impl] mqtt_s3 receive msg {'msg_type': 2, 'sender': 0, 'receiver': 2, 'model_params': 'fedml_123_0_1_966350dd-7a49-46db-93b0-950684972931', 'model_params_url': 'https://fedml.s3.amazonaws.com/fedml_123_0_1_966350dd-7a49-46db-93b0-950684972931?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=n%2Fk9QRPmSGN9wRziAEEcIOsnlQ4%3D&Expires=1689624763', 'model_params_key': 'fedml_123_0_1_966350dd-7a49-46db-93b0-950684972931', 'client_idx': '1', 'client_os': 'PythonClient'}
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:44] [INFO] [mqtt_s3_multi_clients_comm_manager.py:203:_on_message_impl] mqtt_s3 receive msg deviceType
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:44] [INFO] [mqtt_s3_multi_clients_comm_manager.py:208:_on_message_impl] mqtt_s3.on_message: use s3 pack, s3 message key fedml_123_0_1_966350dd-7a49-46db-93b0-950684972931
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:45] [INFO] [remote_storage.py:213:read_model] temp_file_path = /root/fedml_cache/1978@4877badb-dbe9-415f-8286-01dfb8e8a881/fedml_123_0_1_966350dd-7a49-46db-93b0-950684972931
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:47] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 1024.00 KB, progress 5%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:48] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 2048.00 KB, progress 10%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:49] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 3072.00 KB, progress 15%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:51] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 4096.00 KB, progress 20%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:52] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 5120.00 KB, progress 25%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:53] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 6144.00 KB, progress 30%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:55] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 7168.00 KB, progress 35%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:56] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 8192.00 KB, progress 40%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:57] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 9216.00 KB, progress 45%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:12:59] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 10240.00 KB, progress 50%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:00] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 11264.00 KB, progress 55%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:01] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 12288.00 KB, progress 60%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:03] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 13312.00 KB, progress 65%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:07] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 14336.00 KB, progress 70%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 20331.88 KB, progress 100%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [mqtt_s3_multi_clients_comm_manager.py:226:_on_message_impl] mqtt_s3.on_message: model params length 350
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [mqtt_s3_multi_clients_comm_manager.py:231:_on_message_impl] mqtt_s3.on_message: model url https://fedml.s3.amazonaws.com/fedml_123_0_1_966350dd-7a49-46db-93b0-950684972931?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=n%2Fk9QRPmSGN9wRziAEEcIOsnlQ4%3D&Expires=1689624763
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [mqtt_s3_multi_clients_comm_manager.py:188:_notify] mqtt_s3.notify: msg type = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [fedml_client_master_manager.py:96:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [fedml_client_master_manager.py:105:handle_message_receive_model_from_server] current round index 1, total rounds 5
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [fedml_client_master_manager.py:172:__train] #######training########### round_id = 1
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:22] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:13:23] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 0/2670 | Loss: 2.0856261253356934
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:14:32] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 100/2670 | Loss: 1.9934749603271484
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:15:40] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 200/2670 | Loss: 1.5114238262176514
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:16:49] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 300/2670 | Loss: 1.4710040092468262
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:17:58] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 400/2670 | Loss: 1.4855854511260986
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:19:06] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 500/2670 | Loss: 1.2548147439956665
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:20:15] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 600/2670 | Loss: 1.7111482620239258
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:21:23] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 700/2670 | Loss: 1.7686192989349365
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:22:32] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 800/2670 | Loss: 2.088489294052124
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:23:40] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 900/2670 | Loss: 1.7167752981185913
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:24:49] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1000/2670 | Loss: 1.2928812503814697
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:25:57] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1100/2670 | Loss: 1.7473573684692383
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:27:06] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1200/2670 | Loss: 1.497314691543579
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:28:15] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1300/2670 | Loss: 1.5654404163360596
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:29:23] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1400/2670 | Loss: 1.3353662490844727
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:30:32] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1500/2670 | Loss: 1.6146490573883057
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:31:40] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1600/2670 | Loss: 1.5469608306884766
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:32:49] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1700/2670 | Loss: 1.6253025531768799
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:33:57] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1800/2670 | Loss: 2.098844051361084
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:35:06] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 1900/2670 | Loss: 1.6990070343017578
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:36:14] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2000/2670 | Loss: 1.6604664325714111
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:37:23] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2100/2670 | Loss: 1.4525187015533447
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:38:31] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2200/2670 | Loss: 2.1652350425720215
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:39:40] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2300/2670 | Loss: 1.8230597972869873
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:40:49] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2400/2670 | Loss: 1.65497624874115
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:41:57] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2500/2670 | Loss: 1.7894176244735718
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:06] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 2600/2670 | Loss: 1.7119611501693726
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:53] [INFO] [classification_trainer.py:58:train] (Trainer_ID 1. Local Training Epoch: 0 	Loss: 1.720704
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:53] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = False
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:53] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = comm_c2s, START = True
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:53] [INFO] [mqtt_s3_multi_clients_comm_manager.py:296:send_message] mqtt_s3.send_message: S3+MQTT msg sent, message_key = fedml_123_2_b2b2076d-2a37-40d2-b84c-6a2d29aa5ada
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:55] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 1024.00 KB, progress 5%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:55] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 2048.00 KB, progress 10%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:56] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 3072.00 KB, progress 15%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:56] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 4096.00 KB, progress 20%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:57] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 5120.00 KB, progress 25%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:57] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 6144.00 KB, progress 30%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:58] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 7168.00 KB, progress 35%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:58] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 8192.00 KB, progress 40%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:59] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 9216.00 KB, progress 45%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:59] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 10240.00 KB, progress 50%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:43:59] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 11372.01 KB, progress 55%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:00] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 12396.01 KB, progress 60%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:02] [INFO] [remote_storage.py:74:upload_model_progress] model uploaded to S3 size 20332.01 KB, progress 100%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:03] [INFO] [mqtt_s3_multi_clients_comm_manager.py:310:send_message] mqtt_s3.send_message: client s3, topic = fedml_123_2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:03] [INFO] [mqtt_manager.py:93:send_message] FedMLDebug - Send: topic (fedml_123_2), message ({"msg_type": 3, "sender": 2, "receiver": 0, "model_params": "fedml_123_2_b2b2076d-2a37-40d2-b84c-6a2d29aa5ada", "num_samples": 26701, "model_params_url": "https://fedml.s3.amazonaws.com/fedml_123_2_b2b2076d-2a37-40d2-b84c-6a2d29aa5ada?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=N3EAN5eMiquiRQtoUw%2B2V9GDRP4%3D&Expires=1689626643"})
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:04] [INFO] [fedml_comm_manager.py:37:receive_message] communication backend is alive (loop_forever, sender 0 to receiver 0)
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:18] [INFO] [mqtt_s3_multi_clients_comm_manager.py:195:_on_message_impl] mqtt_s3 receive msg {'msg_type': 2, 'sender': 0, 'receiver': 2, 'model_params': 'fedml_123_0_1_c07602d1-3ccf-42f8-b8a4-3c2f1c2702ed', 'model_params_url': 'https://fedml.s3.amazonaws.com/fedml_123_0_1_c07602d1-3ccf-42f8-b8a4-3c2f1c2702ed?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=GxMV5hGUVTXI40H77zrKmC%2BmCWo%3D&Expires=1689626657', 'model_params_key': 'fedml_123_0_1_c07602d1-3ccf-42f8-b8a4-3c2f1c2702ed', 'client_idx': '1', 'client_os': 'PythonClient'}
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:18] [INFO] [mqtt_s3_multi_clients_comm_manager.py:203:_on_message_impl] mqtt_s3 receive msg deviceType
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:18] [INFO] [mqtt_s3_multi_clients_comm_manager.py:208:_on_message_impl] mqtt_s3.on_message: use s3 pack, s3 message key fedml_123_0_1_c07602d1-3ccf-42f8-b8a4-3c2f1c2702ed
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:18] [INFO] [remote_storage.py:213:read_model] temp_file_path = /root/fedml_cache/1978@22dc2f05-7d3a-466c-9961-b5694b494f55/fedml_123_0_1_c07602d1-3ccf-42f8-b8a4-3c2f1c2702ed
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:22] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 1024.00 KB, progress 5%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:25] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 2048.00 KB, progress 10%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:26] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 3072.00 KB, progress 15%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:28] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 4096.00 KB, progress 20%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:30] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 5120.00 KB, progress 25%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:32] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 6144.00 KB, progress 30%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:34] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 7168.00 KB, progress 35%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:35] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 8192.00 KB, progress 40%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:37] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 9216.00 KB, progress 45%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:39] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 10240.00 KB, progress 50%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:40] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 11264.00 KB, progress 55%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:41] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 12288.00 KB, progress 60%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:43] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 13312.00 KB, progress 65%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:46] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 14336.00 KB, progress 70%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:44:47] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 15360.00 KB, progress 75%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [remote_storage.py:226:read_model_progress] model readed from S3 size 20331.88 KB, progress 100%
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [mqtt_s3_multi_clients_comm_manager.py:226:_on_message_impl] mqtt_s3.on_message: model params length 350
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [mqtt_s3_multi_clients_comm_manager.py:231:_on_message_impl] mqtt_s3.on_message: model url https://fedml.s3.amazonaws.com/fedml_123_0_1_c07602d1-3ccf-42f8-b8a4-3c2f1c2702ed?AWSAccessKeyId=AKIAUAWARWF4SW36VYXP&Signature=GxMV5hGUVTXI40H77zrKmC%2BmCWo%3D&Expires=1689626657
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [mqtt_s3_multi_clients_comm_manager.py:188:_notify] mqtt_s3.notify: msg type = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [fedml_comm_manager.py:39:receive_message] receive_message. msg_type = 2, sender_id = 0, receiver_id = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [fedml_client_master_manager.py:96:handle_message_receive_model_from_server] handle_message_receive_model_from_server.
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [fedml_client_master_manager.py:105:handle_message_receive_model_from_server] current round index 2, total rounds 5
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [fedml_client_master_manager.py:172:__train] #######training########### round_id = 2
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:01] [INFO] [__init__.py:16:event] FedMLDebug edge_id = None, event_name = train, START = True
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:45:02] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 0/2670 | Loss: 2.358025074005127
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:46:10] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 100/2670 | Loss: 1.9266427755355835
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:47:18] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 200/2670 | Loss: 1.5934525728225708
+[FedML-Client @device-id-2] [Wed, 12 Jul 2023 20:48:25] [INFO] [classification_trainer.py:46:train] Epoch: 1/1 | Batch: 300/2670 | Loss: 1.6243183612823486
+Traceback (most recent call last):
+  File "/home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML/python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/torch_client.py", line 23, in <module>
+    fedml_runner = FedMLRunner(args, device, dataset, model, trainer, aggregator)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/runner.py", line 51, in __init__
+    self.runner = init_runner_func(
+  File "/usr/local/lib/python3.9/dist-packages/fedml/runner.py", line 125, in _init_cross_silo_runner
+    runner = Client(
+  File "/usr/local/lib/python3.9/dist-packages/fedml/cross_silo/fedml_client.py", line 18, in __init__
+    client_initializer.init_client(
+  File "/usr/local/lib/python3.9/dist-packages/fedml/cross_silo/client/client_initializer.py", line 49, in init_client
+    client_manager.run()
+  File "/usr/local/lib/python3.9/dist-packages/fedml/cross_silo/client/fedml_client_master_manager.py", line 187, in run
+    super().run()
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/fedml_comm_manager.py", line 28, in run
+    self.com_manager.handle_receive_message()
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/communication/mqtt_s3/mqtt_s3_multi_clients_comm_manager.py", line 327, in handle_receive_message
+    self.run_loop_forever()
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/communication/mqtt_s3/mqtt_s3_multi_clients_comm_manager.py", line 124, in run_loop_forever
+    self.mqtt_mgr.loop_forever()
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/communication/mqtt/mqtt_manager.py", line 90, in loop_forever
+    self._client.loop_forever(retry_first_connection=True)
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 1164, in _loop
+    rc = self.loop_read()
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 1556, in loop_read
+    rc = self._packet_read()
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 2439, in _packet_read
+    rc = self._packet_handle()
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 3037, in _packet_handle
+    return self._handle_pubrel()
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 3356, in _handle_pubrel
+    self._handle_on_message(message)
+  File "/usr/local/lib/python3.9/dist-packages/paho/mqtt/client.py", line 3570, in _handle_on_message
+    on_message(self, self._userdata, message)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/communication/mqtt/mqtt_manager.py", line 185, in on_message
+    passthrough_listener(msg)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/communication/mqtt_s3/mqtt_s3_multi_clients_comm_manager.py", line 242, in _on_message
+    self._on_message_impl(msg)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/communication/mqtt_s3/mqtt_s3_multi_clients_comm_manager.py", line 239, in _on_message_impl
+    self._notify(payload_obj)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/communication/mqtt_s3/mqtt_s3_multi_clients_comm_manager.py", line 190, in _notify
+    observer.receive_message(msg_type, msg_params)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/core/distributed/fedml_comm_manager.py", line 45, in receive_message
+    handler_callback_func(msg_params)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/cross_silo/client/fedml_client_master_manager.py", line 108, in handle_message_receive_model_from_server
+    self.__train()
+  File "/usr/local/lib/python3.9/dist-packages/fedml/cross_silo/client/fedml_client_master_manager.py", line 176, in __train
+    weights, local_sample_num = self.trainer_dist_adapter.train(self.round_idx)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/cross_silo/client/fedml_trainer_dist_adapter.py", line 77, in train
+    weights, local_sample_num = self.trainer.train(round_idx)
+  File "/usr/local/lib/python3.9/dist-packages/fedml/cross_silo/client/fedml_trainer.py", line 71, in train
+    self.trainer.train(self.train_local, self.device, self.args)
+  File "/home/saintlab/network-auto-configuration/Raspberry-Pi-Projects/Projects/FedML/python/examples/cross_silo/mqtt_s3_fedavg_cifar10_lr_example/trainer/classification_trainer.py", line 42, in train
+    loss.backward()
+  File "/usr/local/lib/python3.9/dist-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.9/dist-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
