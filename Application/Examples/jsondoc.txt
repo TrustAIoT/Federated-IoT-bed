@@ -1,0 +1,36 @@
+{
+    "source_version" : "debian-2020.3-1+b1",
+    "algorithm" : 4,
+    "vis" : [
+        {
+            "primary" : "d8:3a:dd:21:c1:92",
+            "neighbors" : [
+                {
+                    "router" : "d8:3a:dd:21:c1:92",
+                    "neighbor" : "d8:3a:dd:22:59:60",
+                    "metric" : "1.000"
+                }
+            ]
+        },
+        {
+            "primary" : "d8:3a:dd:22:59:60",
+            "neighbors" : [
+                {
+                    "router" : "d8:3a:dd:22:59:60",
+                    "neighbor" : "d8:3a:dd:21:c1:92",
+                    "metric" : "1.054"
+                }
+            ]
+        },
+        {
+            "primary" : "d8:3a:dd:22:59:61",
+            "neighbors" : [
+                {
+                    "router" : "d8:3a:dd:22:59:61",
+                    "neighbor" : "d8:3a:dd:21:c1:92",
+                    "metric" : "1.001"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+common_args:
+  training_type: "horizontal"
+  random_seed: 0
+
+data_args:
+  dataset: "cifar10"
+  data_cache_dir: "./../../../data"
+  partition_method: "hetero"
+  partition_alpha: 0.5
