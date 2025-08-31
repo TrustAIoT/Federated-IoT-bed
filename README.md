@@ -1,4 +1,4 @@
-# Development and Validation of A Heterogeneous Wireless Mesh IoT Testbed with Distributed Machine Learning
+# A Heterogeneous Wireless Mesh IoT Testbed with Federated and Distributed Machine Learning
 
 ## 1 About the Project 
 
