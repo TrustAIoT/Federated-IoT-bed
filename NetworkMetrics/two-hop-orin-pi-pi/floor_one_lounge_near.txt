@@ -1,0 +1,45 @@
+[B.A.T.M.A.N. adv 2022.3, MainIF/MAC: wlan0/b4:8c:9d:34:e3:f7 (bat0/a2:d8:02:44:f7:07 BATMAN_IV)]
+   Originator        last-seen (#/255) Nexthop           [outgoingIF]
+   d8:3a:dd:21:c1:92    0.580s   (  0) e8:84:a5:f5:59:6f [     wlan0]
+   d8:3a:dd:21:c1:92    0.580s   ( 29) d8:3a:dd:21:c1:92 [     wlan0]
+ * d8:3a:dd:21:c1:92    0.580s   ( 65) d8:3a:dd:21:e6:12 [     wlan0]
+   d8:3a:dd:21:e6:12    0.624s   ( 12) d8:3a:dd:21:c1:92 [     wlan0]
+   d8:3a:dd:21:e6:12    0.624s   (134) e8:84:a5:f5:59:6f [     wlan0]
+ * d8:3a:dd:21:e6:12    0.624s   (213) d8:3a:dd:21:e6:12 [     wlan0]
+   e8:84:a5:f5:59:6f    0.420s   (  0) d8:3a:dd:21:c1:92 [     wlan0]
+   e8:84:a5:f5:59:6f    0.420s   (145) d8:3a:dd:21:e6:12 [     wlan0]
+ * e8:84:a5:f5:59:6f    0.420s   (220) e8:84:a5:f5:59:6f [     wlan0]
+PING d8:3a:dd:21:c1:92 (d8:3a:dd:21:c1:92) 116(144) bytes of data
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=1 ttl=49 time=33.68 ms
+RR: 	b4:8c:9d:34:e3:f7
+	d8:3a:dd:21:e6:12
+	d8:3a:dd:21:c1:92
+	d8:3a:dd:21:c1:92
+	d8:3a:dd:21:e6:12
+	b4:8c:9d:34:e3:f7
+
+Reply from host d8:3a:dd:21:c1:92 timed out
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=3 ttl=49 time=40.43 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=4 ttl=49 time=20.62 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=5 ttl=49 time=9.07 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=6 ttl=49 time=7.17 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=7 ttl=49 time=4.10 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=8 ttl=49 time=25.48 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=9 ttl=49 time=11.30 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=10 ttl=49 time=14.34 ms	(same route)
+Reply from host d8:3a:dd:21:c1:92 timed out
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=12 ttl=49 time=43.65 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=13 ttl=49 time=2.98 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=14 ttl=49 time=4.24 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=15 ttl=49 time=9.91 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=16 ttl=49 time=5.93 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=17 ttl=49 time=10.22 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=18 ttl=49 time=3.06 ms	(same route)
+116 bytes from d8:3a:dd:21:c1:92 icmp_seq=19 ttl=49 time=2.97 ms	(same route)
+Reply from host d8:3a:dd:21:c1:92 timed out
+--- d8:3a:dd:21:c1:92 ping statistics ---
+20 packets transmitted, 17 received, 15% packet loss
+rtt min/avg/max/mdev = 2.975/14.656/43.652/12.979 ms
+Test duration 21860ms.
+Sent 45756 Bytes.
+Throughput: 2.04 KB/s (16.74 Kbps)

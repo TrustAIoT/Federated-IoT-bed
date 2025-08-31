@@ -1,0 +1,30 @@
+[B.A.T.M.A.N. adv 2022.3, MainIF/MAC: wlan0/e8:84:a5:f5:59:6f (bat0/82:1e:43:62:9b:da BATMAN_IV)]
+   Originator        last-seen (#/255) Nexthop           [outgoingIF]
+ * d8:3a:dd:21:e6:12    0.384s   (247) d8:3a:dd:21:e6:12 [     wlan0]
+PING d8:3a:dd:21:e6:12 (d8:3a:dd:21:e6:12) 20(48) bytes of data
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=1 ttl=50 time=1.08 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=2 ttl=50 time=5.23 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=3 ttl=50 time=1.02 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=4 ttl=50 time=18.19 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=5 ttl=50 time=13.34 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=6 ttl=50 time=1.02 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=7 ttl=50 time=0.99 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=8 ttl=50 time=47.73 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=9 ttl=50 time=2.29 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=10 ttl=50 time=0.99 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=11 ttl=50 time=4.48 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=12 ttl=50 time=172.76 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=13 ttl=50 time=0.99 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=14 ttl=50 time=13.36 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=15 ttl=50 time=0.98 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=16 ttl=50 time=0.93 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=17 ttl=50 time=40.90 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=18 ttl=50 time=1.50 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=19 ttl=50 time=0.98 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=20 ttl=50 time=47.46 ms
+--- d8:3a:dd:21:e6:12 ping statistics ---
+20 packets transmitted, 20 received, 0% packet loss
+rtt min/avg/max/mdev = 0.929/18.810/172.764/38.551 ms
+Test duration 21736ms.
+Sent 16485444 Bytes.
+Throughput: 740.66 KB/s (6067.51 Kbps)

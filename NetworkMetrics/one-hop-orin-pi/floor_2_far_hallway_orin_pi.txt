@@ -1,0 +1,6 @@
+[B.A.T.M.A.N. adv 2022.3, MainIF/MAC: wlan0/b4:8c:9d:34:e3:f7 (bat0/a6:45:23:b4:6c:b0 BATMAN_IV)]
+   Originator        last-seen (#/255) Nexthop           [outgoingIF]
+   d8:3a:dd:21:c1:92  159.536s   (154) e8:84:a5:f5:59:6f [     wlan0]
+ * d8:3a:dd:21:c1:92  159.536s   (238) d8:3a:dd:21:c1:92 [     wlan0]
+   e8:84:a5:f5:59:6f  149.868s   (  0) d8:3a:dd:21:c1:92 [     wlan0]
+ * e8:84:a5:f5:59:6f  149.868s   (193) e8:84:a5:f5:59:6f [     wlan0]

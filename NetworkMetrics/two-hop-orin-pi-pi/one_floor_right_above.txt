@@ -1,0 +1,38 @@
+[B.A.T.M.A.N. adv 2022.3, MainIF/MAC: wlan0/b4:8c:9d:34:e3:f7 (bat0/a2:d8:02:44:f7:07 BATMAN_IV)]
+   Originator        last-seen (#/255) Nexthop           [outgoingIF]
+   d8:3a:dd:21:c1:92    0.392s   (124) e8:84:a5:f5:59:6f [     wlan0]
+   d8:3a:dd:21:c1:92    0.392s   (176) d8:3a:dd:21:e6:12 [     wlan0]
+ * d8:3a:dd:21:c1:92    0.392s   (238) d8:3a:dd:21:c1:92 [     wlan0]
+   d8:3a:dd:21:e6:12    0.088s   (180) d8:3a:dd:21:c1:92 [     wlan0]
+   d8:3a:dd:21:e6:12    0.088s   (  0) e8:84:a5:f5:59:6f [     wlan0]
+ * d8:3a:dd:21:e6:12    0.088s   (227) d8:3a:dd:21:e6:12 [     wlan0]
+   e8:84:a5:f5:59:6f    0.780s   (140) d8:3a:dd:21:c1:92 [     wlan0]
+   e8:84:a5:f5:59:6f    0.780s   (169) d8:3a:dd:21:e6:12 [     wlan0]
+ * e8:84:a5:f5:59:6f    0.780s   (229) e8:84:a5:f5:59:6f [     wlan0]
+PING d8:3a:dd:21:c1:92 (d8:3a:dd:21:c1:92) 20(48) bytes of data
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=1 ttl=50 time=4.49 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=2 ttl=50 time=1.08 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=3 ttl=50 time=1.07 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=4 ttl=50 time=1.06 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=5 ttl=50 time=1.17 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=6 ttl=50 time=1.12 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=7 ttl=50 time=1.07 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=8 ttl=50 time=1.08 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=9 ttl=50 time=3.67 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=10 ttl=50 time=4.88 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=11 ttl=50 time=6.88 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=12 ttl=50 time=1.24 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=13 ttl=50 time=1.08 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=14 ttl=50 time=1.17 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=15 ttl=50 time=1.06 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=16 ttl=50 time=1.07 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=17 ttl=50 time=1.16 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=18 ttl=50 time=4.47 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=19 ttl=50 time=5.67 ms
+20 bytes from d8:3a:dd:21:c1:92 icmp_seq=20 ttl=50 time=1.10 ms
+--- d8:3a:dd:21:c1:92 ping statistics ---
+20 packets transmitted, 20 received, 0% packet loss
+rtt min/avg/max/mdev = 1.058/2.279/6.884/1.875 ms
+Test duration 21680ms.
+Sent 34948728 Bytes.
+Throughput: 1.54 MB/s (12.90 Mbps)

@@ -1,0 +1,34 @@
+[B.A.T.M.A.N. adv 2022.3, MainIF/MAC: wlan0/b4:8c:9d:34:e3:f7 (bat0/a2:d8:02:44:f7:07 BATMAN_IV)]
+   Originator        last-seen (#/255) Nexthop           [outgoingIF]
+ * d8:3a:dd:21:c1:92   86.468s   ( 23) d8:3a:dd:21:e6:12 [     wlan0]
+   d8:3a:dd:21:e6:12    0.068s   (124) e8:84:a5:f5:59:6f [     wlan0]
+ * d8:3a:dd:21:e6:12    0.068s   (222) d8:3a:dd:21:e6:12 [     wlan0]
+   e8:84:a5:f5:59:6f    0.436s   (169) d8:3a:dd:21:e6:12 [     wlan0]
+ * e8:84:a5:f5:59:6f    0.436s   (218) e8:84:a5:f5:59:6f [     wlan0]
+PING d8:3a:dd:21:c1:92 (d8:3a:dd:21:c1:92) 20(48) bytes of data
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+Reply from host d8:3a:dd:21:c1:92 timed out
+--- d8:3a:dd:21:c1:92 ping statistics ---
+20 packets transmitted, 0 received, 100% packet loss
+rtt min/avg/max/mdev = 0.000/0.000/0.000/0.000 ms
+Test duration 20768ms.
+Sent 0 Bytes.
+Throughput: 0 Bytes/s (0 Bps)

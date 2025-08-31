@@ -1,0 +1,33 @@
+[B.A.T.M.A.N. adv 2022.3, MainIF/MAC: wlan0/b4:8c:9d:34:e3:f7 (bat0/5e:04:aa:0f:b9:1e BATMAN_IV)]
+   Originator        last-seen (#/255) Nexthop           [outgoingIF]
+   d8:3a:dd:21:e6:12    0.740s   ( 62) e8:84:a5:f5:59:6f [     wlan0]
+ * d8:3a:dd:21:e6:12    0.740s   (142) d8:3a:dd:21:e6:12 [     wlan0]
+   e8:84:a5:f5:59:6f    0.664s   ( 51) d8:3a:dd:21:e6:12 [     wlan0]
+ * e8:84:a5:f5:59:6f    0.664s   (175) e8:84:a5:f5:59:6f [     wlan0]
+PING d8:3a:dd:21:e6:12 (d8:3a:dd:21:e6:12) 20(48) bytes of data
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=1 ttl=50 time=12.92 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=2 ttl=50 time=1.51 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=3 ttl=50 time=1.45 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=4 ttl=50 time=1.45 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=5 ttl=50 time=9.78 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=6 ttl=50 time=1.49 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=7 ttl=50 time=1.46 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=8 ttl=50 time=4.74 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=9 ttl=50 time=30.85 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=10 ttl=50 time=11.54 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=11 ttl=50 time=1.11 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=12 ttl=50 time=1.20 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=13 ttl=50 time=2.15 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=14 ttl=50 time=1.12 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=15 ttl=50 time=1.13 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=16 ttl=50 time=1.42 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=17 ttl=50 time=3.88 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=18 ttl=50 time=9.87 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=19 ttl=50 time=10.04 ms
+20 bytes from d8:3a:dd:21:e6:12 icmp_seq=20 ttl=50 time=1.01 ms
+--- d8:3a:dd:21:e6:12 ping statistics ---
+20 packets transmitted, 20 received, 0% packet loss
+rtt min/avg/max/mdev = 1.006/5.506/30.850/7.073 ms
+Test duration 21452ms.
+Sent 8098812 Bytes.
+Throughput: 368.68 KB/s (3020.25 Kbps)

@@ -1,0 +1,30 @@
+[B.A.T.M.A.N. adv 2022.3, MainIF/MAC: wlan0/b4:8c:9d:34:e3:f7 (bat0/a2:d8:02:44:f7:07 BATMAN_IV)]
+   Originator        last-seen (#/255) Nexthop           [outgoingIF]
+ * d8:3a:dd:21:c1:92    0.516s   (232) d8:3a:dd:21:c1:92 [     wlan0]
+   d8:3a:dd:21:c1:92    0.516s   (175) e8:84:a5:f5:59:6f [     wlan0]
+   e8:84:a5:f5:59:6f    0.592s   (177) d8:3a:dd:21:c1:92 [     wlan0]
+ * e8:84:a5:f5:59:6f    0.592s   (231) e8:84:a5:f5:59:6f [     wlan0]
+PING d8:3a:dd:21:e6:12 (d8:3a:dd:21:e6:12) 20(48) bytes of data
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 1)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 2)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 3)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 4)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 5)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 6)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 7)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 8)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 9)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 10)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 11)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 12)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 13)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 14)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 15)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 16)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 17)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 18)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 19)
+From d8:3a:dd:21:e6:12: Destination Host Unreachable (icmp_seq 20)
+--- d8:3a:dd:21:e6:12 ping statistics ---
+20 packets transmitted, 0 received, 100% packet loss
+rtt min/avg/max/mdev = 0.000/0.000/0.000/0.000 ms
