@@ -1,0 +1,4 @@
+protobuf==3.20.3
+urllib3==2.0.4
+fedml==0.8.7
+mpi4py==3.1.4
